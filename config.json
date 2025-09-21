@@ -3,7 +3,7 @@
     "subTitle":"Welcome to d111kc's blog!",
     "avatarUrl":"https://avatars.githubusercontent.com/u/202737936?v=4",
     "GMEEK_VERSION":"last",
-    "homeUrl":"https://blog.meekdai.com",
+    "homeUrl":"https://d111kc.com",
     "faviconUrl":"https://avatars.githubusercontent.com/u/202737936?v=4",
     "singlePage":["link","about"],
     "email":"d111kc@outlook.com",
@@ -15,5 +15,5 @@
     "nightTheme":"dark_colorblind",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
-    "allHead": "<style>body[data-ui-pending] #content {opacity:0;transition:opacity 0.3s ease;}</style><script>document.documentElement.setAttribute('data-ui-pending','true');</script><link rel='stylesheet' href='https://code.buxiantang.top/assets/GmeekBaseTheme.css'><script src='https://code.buxiantang.top/assets/GmeekCustomizeCss.js' defer></script>"
+    "allHead":"<style>body[data-ui-pending] #content {opacity:0;transition:opacity 0.3s ease;}</style><script>document.documentElement.setAttribute('data-ui-pending','true');</script><link rel='stylesheet' href='https://code.buxiantang.top/assets/GmeekBaseTheme.css'><script src='https://code.buxiantang.top/assets/GmeekCustomizeCss.js' defer></script>"
 }
