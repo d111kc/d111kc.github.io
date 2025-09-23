@@ -1,0 +1,12 @@
+- [ ] brutally
+- [ ] plunge
+- [ ] seal
+- [ ] assume v.就职，取得权力，假设；假定；认为；假装
+- [ ] embark
+- [ ] desperate
+- [ ] elimination
+- [ ] deterioration
+- [ ] relay
+- [ ] notably
+- [ ] incidentally
+- [ ] subtle
