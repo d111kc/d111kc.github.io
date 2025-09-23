@@ -1,0 +1,14 @@
+- [ ] disc
+- [ ] cabinet
+- [ ] magnifying glass
+- [ ] interior
+- [ ] banquet
+- [ ] fluctuation
+- [ ] dedicit
+- [ ] exotic
+- [ ] glamour
+- [ ] hierarchical
+- [ ] prestige
+- [ ] eternal
+- [ ] diminishing
+- [ ] magnitude
