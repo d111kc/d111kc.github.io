@@ -10,3 +10,5 @@
 - [ ] notably
 - [ ] incidentally
 - [ ] subtle
+- [ ] exeecise caution 小心谨慎
+- [ ] advocate v.&n.拥护（者），提倡
