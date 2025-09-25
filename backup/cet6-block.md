@@ -1,14 +1,14 @@
 - [ ] brutally
-- [ ] plunge
+- [ ] plunge v.&n.暴跌，骤降，跳水
 - [ ] seal
 - [ ] assume v.就职，取得权力，假设；假定；认为；假装
 - [ ] embark
 - [ ] desperate
-- [ ] elimination
+- [ ] elimination n.消除，排除
 - [ ] deterioration
-- [ ] relay
+- [ ] relay v.转发，转播 n.轮换者，接班人
 - [ ] notably
 - [ ] incidentally
-- [ ] subtle
+- [ ] subtle adj.不易察觉的；不明显的；微妙的；机智的
 - [ ] exeecise caution 小心谨慎
 - [ ] advocate v.&n.拥护（者），提倡
