@@ -12,3 +12,8 @@
 - [ ] subtle adj.不易察觉的；不明显的；微妙的；机智的
 - [ ] exeecise caution 小心谨慎
 - [ ] advocate v.&n.拥护（者），提倡
+- [ ] alternatively
+- [ ] chronically
+- [ ] deprivation
+- [ ] pierce
+- [ ] 
