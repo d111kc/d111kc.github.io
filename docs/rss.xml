@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>D111KC</title><link>https://d111kc.top</link><description>Welcome to d111kc's blog!</description><copyright>D111KC</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/202737936?v=4</url><title>avatar</title><link>https://d111kc.top</link></image><lastBuildDate>Mon, 29 Sep 2025 08:09:04 +0000</lastBuildDate><managingEditor>D111KC</managingEditor><ttl>60</ttl><webMaster>D111KC</webMaster><item><title>cet6-translation</title><link>https://d111kc.top/post/cet6-translation.html</link><description>- [ ] ritual
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>D111KC</title><link>https://d111kc.top</link><description>Welcome to d111kc's blog!</description><copyright>D111KC</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/202737936?v=4</url><title>avatar</title><link>https://d111kc.top</link></image><lastBuildDate>Mon, 29 Sep 2025 16:22:07 +0000</lastBuildDate><managingEditor>D111KC</managingEditor><ttl>60</ttl><webMaster>D111KC</webMaster><item><title>cet6-translation</title><link>https://d111kc.top/post/cet6-translation.html</link><description>- [ ] ritual
 - [ ] jubilance
 - [ ] extensively
 - [ ] versatile
@@ -50,11 +50,4 @@
 - [ ] prestige
 - [ ] eternal
 - [ ] diminishing
-- [ ] magnitude。</description><guid isPermaLink="true">https://d111kc.top/post/cet6-listening.html</guid><pubDate>Tue, 23 Sep 2025 13:28:39 +0000</pubDate></item><item><title>hello</title><link>https://d111kc.top/post/hello.html</link><description>## This is h2
-
-&gt; [!NOTE]
-&gt; This is a note
-
-```py
-print('hello world')
-```。</description><guid isPermaLink="true">https://d111kc.top/post/hello.html</guid><pubDate>Fri, 19 Sep 2025 09:56:59 +0000</pubDate></item></channel></rss>
+- [ ] magnitude。</description><guid isPermaLink="true">https://d111kc.top/post/cet6-listening.html</guid><pubDate>Tue, 23 Sep 2025 13:28:39 +0000</pubDate></item></channel></rss>
