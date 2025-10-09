@@ -25,3 +25,4 @@
 - [ ] monochromatic adj.单色的
 - [ ] saturation n.饱和度
 - [ ] soothe v.安慰
+- [ ] prototype n.原型，样板
