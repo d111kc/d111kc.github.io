@@ -9,3 +9,9 @@
 - [ ] tertiary colors 复色，原色和间色混合得到
 - [ ] hue n.色调，颜色
 - [ ] derive v.由来
+- [ ] coziness n.舒适，安逸
+- [ ] evoke v.唤起
+- [ ] serenity n.宁静
+- [ ] palette n.调色板
+- [ ] scheme n.方案
+- [ ] 
