@@ -15,4 +15,13 @@
 - [ ] palette n.调色板
 - [ ] scheme n.方案
 - [ ] analogous adj.类似的
-
+- [ ] cohesive adj.有结合力的
+- [ ] adjacent adj.邻近的
+- [ ] magenta n.品红色
+- [ ] complementary adj.互补的
+- [ ] triadic adj.三元，三色的
+- [ ] vibrant adj.充满生机的，鲜艳的
+- [ ] equidistant adj.等距离的
+- [ ] monochromatic adj.单色的
+- [ ] saturation n.饱和度
+- [ ] soothe v.安慰
