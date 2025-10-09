@@ -1,0 +1,6 @@
+- [ ] linear
+- [ ] radial
+- [ ] gradient
+- [ ] Hex
+- [ ] HSL 
+- [ ] perception n.感知
