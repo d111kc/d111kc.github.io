@@ -26,3 +26,5 @@
 - [ ] saturation n.饱和度
 - [ ] soothe v.安慰
 - [ ] prototype n.原型，样板
+- [ ] versatile adj.通用的
+- [ ] spectrum n.光谱
