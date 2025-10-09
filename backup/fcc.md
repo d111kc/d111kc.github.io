@@ -14,4 +14,5 @@
 - [ ] serenity n.宁静
 - [ ] palette n.调色板
 - [ ] scheme n.方案
-- [ ] 
+- [ ] analogous adj.类似的
+
