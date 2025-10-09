@@ -4,6 +4,8 @@
 - [ ] Hex
 - [ ] HSL 
 - [ ] perception n.感知
-- [ ] primary colors 原色，红绿蓝
-- [ ] secondary colors 间色，两种原色混合得到
+- [ ] primary colors 原色，黄蓝红
+- [ ] secondary colors 间色，两种原色等量混合得到
 - [ ] tertiary colors 复色，原色和间色混合得到
+- [ ] hue n.色调，颜色
+- [ ] derive v.由来
