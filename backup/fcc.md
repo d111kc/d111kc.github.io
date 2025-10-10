@@ -37,3 +37,4 @@
 - [ ] translate v.平移
 - [ ] clockwise adj.顺时针方向的
 - [ ] seizure v.发作 n.癫痫
+- [ ] collapse v.坍塌，崩溃
