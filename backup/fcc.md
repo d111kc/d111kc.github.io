@@ -28,9 +28,12 @@
 - [ ] prototype n.原型，样板
 - [ ] versatile adj.通用的
 - [ ] spectrum n.光谱
-- [ ] transform
-- [ ] overflow
+- [ ] transform v.转换，变换，几何变换
+- [ ] overflow v.溢出
 - [ ] filter
-- [ ] rotate
-- [ ] scale
-- [ ] skew
+- [ ] rotate v.旋转
+- [ ] scale v.缩放
+- [ ] skew v.扭曲
+- [ ] translate v.平移
+- [ ] clockwise adj.顺时针方向的
+- [ ] seizure v.发作 n.癫痫
