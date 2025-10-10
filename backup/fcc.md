@@ -28,3 +28,9 @@
 - [ ] prototype n.原型，样板
 - [ ] versatile adj.通用的
 - [ ] spectrum n.光谱
+- [ ] transform
+- [ ] overflow
+- [ ] filter
+- [ ] rotate
+- [ ] scale
+- [ ] skew
