@@ -39,3 +39,4 @@
 - [ ] seizure v.发作 n.癫痫
 - [ ] collapse v.坍塌，崩溃
 - [ ] flexbox n.弹性盒子
+- [ ] perpendicular adj.&n.垂直
