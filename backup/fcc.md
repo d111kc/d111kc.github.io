@@ -43,3 +43,4 @@
 - [ ] wrap v.包裹，换行
 - [ ] evenly adv.均匀地
 - [ ] envision v.想象，展望
+- [ ] justify v.两端对齐
