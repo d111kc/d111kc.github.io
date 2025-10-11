@@ -46,5 +46,5 @@
 - [ ] justify v.两端对齐
 - [ ] typography n.印刷（术），排版
 - [ ] typeface n.字体
-- [ ] serif n.衬线字体
-- [ ] sans serif 无衬线字体
+- [ ] serif n.衬线字体，宋体等印刷体
+- [ ] sans serif 无衬线字体，黑体等电子设备常用字体
