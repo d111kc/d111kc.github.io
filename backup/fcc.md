@@ -42,3 +42,4 @@
 - [ ] perpendicular adj.&n.垂直
 - [ ] wrap v.包裹，换行
 - [ ] evenly adv.均匀地
+- [ ] envision v.想象，展望
