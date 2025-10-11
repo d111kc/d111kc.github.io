@@ -48,3 +48,10 @@
 - [ ] typeface n.字体
 - [ ] serif n.衬线字体，宋体等印刷体
 - [ ] sans serif 无衬线字体，黑体等电子设备常用字体
+- [ ] oblique n.&v.倾斜
+- [ ] condense v.压缩
+- [ ] ascender n.上升笔画
+- [ ] descender n.下降物
+- [ ] kern n.字符间距
+- [ ] dense adj.密集的
+- [ ] generic adj.通用的
