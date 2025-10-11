@@ -41,3 +41,4 @@
 - [ ] flexbox n.弹性盒子
 - [ ] perpendicular adj.&n.垂直
 - [ ] wrap v.包裹，换行
+- [ ] evenly adv.均匀地
