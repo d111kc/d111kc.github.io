@@ -45,3 +45,4 @@
 - [ ] envision v.想象，展望
 - [ ] justify v.两端对齐
 - [ ] typography n.印刷（术），排版
+- [ ] typeface n.字体
