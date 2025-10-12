@@ -55,3 +55,4 @@
 - [ ] kern n.字符间距
 - [ ] dense adj.密集的
 - [ ] generic adj.通用的
+- [ ] portfolio n.作品集，档案，文件夹
