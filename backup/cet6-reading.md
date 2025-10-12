@@ -1,0 +1,7 @@
+- [ ] rigor
+- [ ] assert
+- [ ] roll out 转出
+- [ ] self-evident adj.不言而喻的
+- [ ] thought-provoking adj.发人深省的
+- [ ] irrational adj.不合理的
+- [ ] groundless adj.无根据的
