@@ -16,4 +16,4 @@
 - [ ] chronically
 - [ ] deprivation
 - [ ] pierce
-- [ ] 
+- [ ] take slightly out of context 轻微断章取义
