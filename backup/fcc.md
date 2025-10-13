@@ -56,3 +56,6 @@
 - [ ] dense adj.密集的
 - [ ] generic adj.通用的
 - [ ] portfolio n.作品集，档案，文件夹
+- [ ] glyph n.字形
+- [ ] customize v.定制
+- [ ] simultaneous adj.同步的，同时的
