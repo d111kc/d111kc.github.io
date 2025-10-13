@@ -60,3 +60,5 @@
 - [ ] customize v.定制
 - [ ] simultaneous adj.同步的，同时的
 - [ ] compatibility n.兼容性，和睦相处
+- [ ] render v.渲染，提供
+- [ ] sticky adj.粘性的
