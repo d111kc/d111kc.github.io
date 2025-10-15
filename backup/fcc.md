@@ -62,3 +62,4 @@
 - [ ] compatibility n.兼容性，和睦相处
 - [ ] render v.渲染，提供
 - [ ] sticky adj.粘性的
+- [ ] symbiosis n.共生，合作关系
