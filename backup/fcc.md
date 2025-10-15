@@ -63,3 +63,4 @@
 - [ ] render v.渲染，提供
 - [ ] sticky adj.粘性的
 - [ ] symbiosis n.共生，合作关系
+- [ ] optimal adj.最好的，最适宜的
