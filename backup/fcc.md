@@ -64,3 +64,4 @@
 - [ ] sticky adj.粘性的
 - [ ] symbiosis n.共生，合作关系
 - [ ] optimal adj.最好的，最适宜的
+- [ ] granular adj.由颗粒构成的
