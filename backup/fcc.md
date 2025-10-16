@@ -76,3 +76,9 @@
 - [ ] conceptualize v.构思，概念化
 - [ ] proportionally adv.按比例
 - [ ] employ v.使用，雇用
+- [ ] invisible adj.看不见的
+- [ ] grid n.网格
+- [ ] fractional adj.分数的，小数的，很少的
+- [ ] redundance n.冗余
+- [ ] implicit adj.含蓄的
+- [ ] explicit adj.明确的，易于理解的
