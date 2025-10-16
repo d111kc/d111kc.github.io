@@ -65,3 +65,14 @@
 - [ ] symbiosis n.共生，合作关系
 - [ ] optimal adj.最好的，最适宜的
 - [ ] granular adj.由颗粒构成的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] traction n.牵引力，拉力
+- [ ] cornerstone n.基础
+- [ ] optimize v.充分利用，使最优化
+- [ ] outset n.开始
+- [ ] exemplify v.举例证明，示范
+- [ ] essence n.本质，精髓
+- [ ] predominantly adv.主要地
+- [ ] conceptualize v.构思，概念化
+- [ ] proportionally adv.按比例
+- [ ] employ v.使用，雇用
