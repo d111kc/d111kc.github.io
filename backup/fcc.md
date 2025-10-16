@@ -82,3 +82,9 @@
 - [ ] redundance n.冗余
 - [ ] implicit adj.含蓄的
 - [ ] explicit adj.明确的，易于理解的
+- [ ] rigid adj.死板的，严格的
+- [ ] cybersecurity n.网络安全
+- [ ] malware n.恶意软件，电脑病毒
+- [ ] compatible adj.兼容的
+- [ ] scrape v.刮，擦伤
+- [ ] abbreviation n.缩写，约分
