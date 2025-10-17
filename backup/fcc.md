@@ -88,3 +88,4 @@
 - [ ] compatible adj.兼容的
 - [ ] scrape v.刮，擦伤
 - [ ] abbreviation n.缩写，约分
+- [ ] duplicate v.复制
