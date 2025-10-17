@@ -89,3 +89,4 @@
 - [ ] scrape v.刮，擦伤
 - [ ] abbreviation n.缩写，约分
 - [ ] duplicate v.复制
+- [ ] squash v.挤压
