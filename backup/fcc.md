@@ -90,3 +90,8 @@
 - [ ] abbreviation n.缩写，约分
 - [ ] duplicate v.复制
 - [ ] squash v.挤压
+- [ ] flush v.&n.强制刷新，脸红
+- [ ] curly braces 花括号
+- [x] immutable adj.不可变的
+- [ ] primitive type 基本类型
+- [ ] reference type 引用类型
