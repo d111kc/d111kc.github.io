@@ -95,3 +95,4 @@
 - [x] immutable adj.不可变的
 - [ ] primitive type 基本类型
 - [ ] reference type 引用类型
+- [ ] sock n.短袜，重击
