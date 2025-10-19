@@ -97,3 +97,4 @@
 - [ ] reference type 引用类型
 - [ ] sock n.短袜，重击
 - [ ] excerpt n.摘录，节选，片段
+- [ ] sleeve n.袖子
