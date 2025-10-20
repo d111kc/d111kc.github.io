@@ -99,3 +99,5 @@
 - [ ] excerpt n.摘录，节选，片段
 - [ ] sleeve n.袖子
 - [ ] arithmetic n.算术
+- [ ] parameter n.形参
+- [ ] argument n.实参
