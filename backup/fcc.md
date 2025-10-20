@@ -101,3 +101,4 @@
 - [ ] arithmetic n.算术
 - [ ] parameter n.形参
 - [ ] argument n.实参
+- [ ] inherent adj.天生的，固有的
