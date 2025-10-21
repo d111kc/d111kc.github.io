@@ -103,3 +103,4 @@
 - [ ] argument n.实参
 - [ ] inherent adj.天生的，固有的
 - [ ] compact adj.紧凑的 n.契约
+- [ ] enumerate v.枚举，列举
