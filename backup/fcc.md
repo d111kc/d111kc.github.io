@@ -104,3 +104,4 @@
 - [ ] inherent adj.天生的，固有的
 - [ ] compact adj.紧凑的 n.契约
 - [ ] enumerate v.枚举，列举
+- [ ] rigorous adj.严谨的，严格的，细致的
