@@ -18,3 +18,11 @@
 - [ ] pierce
 - [ ] take slightly out of context 轻微断章取义
 - [ ] prevail v.战胜，流行
+- [ ] arena n.活动场所
+- [ ] hasten v.促进，加快
+- [ ] hypothesis n.假设
+- [ ] inertia n.惯性，惰性
+- [ ] contextual adj.上下文的，与语境相关的
+- [ ] indefinite adj.无限的
+- [ ] warrant v.保证 n.依据，许可证
+- [ ] indulge v.沉迷，放纵
