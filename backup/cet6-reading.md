@@ -5,3 +5,4 @@
 - [ ] thought-provoking adj.发人深省的
 - [ ] irrational adj.不合理的
 - [ ] groundless adj.无根据的
+- [ ] hitherto adv.迄今为止
