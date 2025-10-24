@@ -107,3 +107,4 @@
 - [ ] rigorous adj.严谨的，严格的，细致的
 - [ ] resume n.简历 v.继续
 - [ ] vanilla adj.普通的，寻常的
+- [ ] asynchronously adv.异步
