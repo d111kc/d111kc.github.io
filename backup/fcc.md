@@ -108,3 +108,5 @@
 - [ ] resume n.简历 v.继续
 - [ ] vanilla adj.普通的，寻常的
 - [ ] asynchronously adv.异步
+- [ ] mitigate v.缓解
+- [ ] accordingly adv.相应地，因此
