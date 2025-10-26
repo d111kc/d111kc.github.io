@@ -26,3 +26,10 @@
 - [ ] indefinite adj.无限的
 - [ ] warrant v.保证 n.依据，许可证
 - [ ] indulge v.沉迷，放纵
+- [ ] signify v.说明，意味着，象征
+- [ ] drastically adv.大幅度地，激烈地
+- [ ] metrics n.指标，度量
+- [ ] simultaneous adj.同时的，同步的
+- [ ] predominance n.主导地位，优势
+- [ ] monopolize v.垄断
+- [ ] justify v.证明…正确（或正当、有理）；对…作出解释；为…辩解（或辩护）
