@@ -1,21 +1,21 @@
-- [ ] brutally
+- [ ] brutally adv.极其，残忍地
 - [ ] plunge v.&n.暴跌，骤降，跳水
-- [ ] seal
+- [ ] seal v.封闭；封锁 n.海报，印章，封条
 - [ ] assume v.就职，取得权力，假设；假定；认为；假装
-- [ ] embark
-- [ ] desperate
+- [ ] embark v.上船，从事
+- [ ] desperate adj.渴望的，绝望的
 - [ ] elimination n.消除，排除
-- [ ] deterioration
+- [ ] deterioration v.变质，退化，恶化
 - [ ] relay v.转发，转播 n.轮换者，接班人
-- [ ] notably
-- [ ] incidentally
+- [ ] notably adv.特别；非常；尤其；极大程度上
+- [ ] incidental adj.次要的，偶然的
 - [ ] subtle adj.不易察觉的；不明显的；微妙的；机智的
 - [ ] exeecise caution 小心谨慎
 - [ ] advocate v.&n.拥护（者），提倡
-- [ ] alternatively
-- [ ] chronically
-- [ ] deprivation
-- [ ] pierce
+- [ ] alternatively adv.或者，另外
+- [ ] chronically adv.慢性地，长期地
+- [ ] deprivation n.剥夺，丧失，贫困，缺乏
+- [ ] pierce v.穿透，刺破
 - [ ] take slightly out of context 轻微断章取义
 - [ ] prevail v.战胜，流行
 - [ ] arena n.活动场所
@@ -33,3 +33,4 @@
 - [ ] predominance n.主导地位，优势
 - [ ] monopolize v.垄断
 - [ ] justify v.证明…正确（或正当、有理）；对…作出解释；为…辩解（或辩护）
+- [ ] plunge v.暴跌，骤减
