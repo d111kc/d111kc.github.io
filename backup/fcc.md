@@ -110,3 +110,7 @@
 - [ ] asynchronously adv.异步
 - [ ] mitigate v.缓解
 - [ ] accordingly adv.相应地，因此
+- [ ] emulator n.仿真器，模拟器
+- [ ] aptly adv.适当地
+- [ ] arguably adv.可以认为，有争议地，可论证地
+- [ ] pedantic adj.学究的，迂腐的
