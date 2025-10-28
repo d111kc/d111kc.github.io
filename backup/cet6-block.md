@@ -34,3 +34,7 @@
 - [ ] monopolize v.垄断
 - [ ] justify v.证明…正确（或正当、有理）；对…作出解释；为…辩解（或辩护）
 - [ ] plunge v.暴跌，骤减
+- [ ] manifest v.表明 adj.明显的
+- [ ] ascend v.上升，升高
+- [ ] definite adj.&n.肯定
+- [ ] 
