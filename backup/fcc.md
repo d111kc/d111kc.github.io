@@ -114,3 +114,5 @@
 - [ ] aptly adv.适当地
 - [ ] arguably adv.可以认为，有争议地，可论证地
 - [ ] pedantic adj.学究的，迂腐的
+- [ ] aggregate v.&n.聚集，总计
+- [ ] allot v.分配
