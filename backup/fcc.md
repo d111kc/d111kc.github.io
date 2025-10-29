@@ -119,3 +119,5 @@
 - [ ] prone adj.易于遭受…的
 - [ ] enroll v.登记，入学，招收
 - [ ] uniqueness n.唯一性
+- [ ] convoluted adj.复杂的
+- [ ] wizard adj.出色的 n.向导，奇才
