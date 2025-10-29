@@ -116,3 +116,4 @@
 - [ ] pedantic adj.学究的，迂腐的
 - [ ] aggregate v.&n.聚集，总计
 - [ ] allot v.分配
+- [ ] prone adj.易于遭受…的
