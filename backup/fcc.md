@@ -117,3 +117,4 @@
 - [ ] aggregate v.&n.聚集，总计
 - [ ] allot v.分配
 - [ ] prone adj.易于遭受…的
+- [ ] enroll v.登记，入学，招收
