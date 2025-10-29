@@ -121,3 +121,5 @@
 - [ ] uniqueness n.唯一性
 - [ ] convoluted adj.复杂的
 - [ ] wizard adj.出色的 n.向导，奇才
+- [ ] arguably adv.可论证地；可以认为
+- [ ] tome n.巨著
