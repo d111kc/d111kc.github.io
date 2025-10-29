@@ -123,3 +123,7 @@
 - [ ] wizard adj.出色的 n.向导，奇才
 - [ ] arguably adv.可论证地；可以认为
 - [ ] tome n.巨著
+- [ ] tradeoff n.交易，权衡，取舍
+- [ ] rudimentary adj.基本的
+- [ ] snapshot n.简介，快照
+- [ ] codebase n.代码库
