@@ -37,4 +37,9 @@
 - [ ] manifest v.表明 adj.明显的
 - [ ] ascend v.上升，升高
 - [ ] definite adj.&n.肯定
-- [ ] 
+- [ ] specifically
+- [ ] predator
+- [ ] exotic
+- [ ] dramatically adv.引人注目地，显著地，戏剧地
+- [ ] consciously adv.有意识地，自觉地
+- [ ] inherent adj.固有的，内在的，与生俱来的
