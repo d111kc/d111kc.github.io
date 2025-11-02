@@ -43,3 +43,10 @@
 - [ ] dramatically adv.引人注目地，显著地，戏剧地
 - [ ] consciously adv.有意识地，自觉地
 - [ ] inherent adj.固有的，内在的，与生俱来的
+- [ ] estate n.房地产，庄园，财产
+- [ ] reproduce v.繁殖；复制；再现；生育
+- [ ] prolong v.延长
+- [ ] leaf n.叶子
+- [ ] devastate v.摧毁
+- [ ] gaze v.&n.凝视，注视
+- [ ] multitude n.群众，人群，许多，大量
