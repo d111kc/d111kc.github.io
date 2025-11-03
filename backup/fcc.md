@@ -127,3 +127,4 @@
 - [ ] rudimentary adj.基本的
 - [ ] snapshot n.简介，快照
 - [ ] codebase n.代码库
+- [ ] deviation n.偏差，偏离，违背
