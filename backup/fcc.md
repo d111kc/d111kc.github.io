@@ -128,3 +128,4 @@
 - [ ] snapshot n.简介，快照
 - [ ] codebase n.代码库
 - [ ] deviation n.偏差，偏离，违背
+- [ ] tweak v.调整，微调
