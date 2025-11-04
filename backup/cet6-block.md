@@ -50,3 +50,6 @@
 - [ ] devastate v.摧毁
 - [ ] gaze v.&n.凝视，注视
 - [ ] multitude n.群众，人群，许多，大量
+- [ ] stable adj.稳定的；稳固的；牢固的；稳重的
+- [ ] homogenization n.同质化；均质化处理；匀浆
+- [ ] preceive v.观察
