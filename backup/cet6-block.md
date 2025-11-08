@@ -53,3 +53,11 @@
 - [ ] stable adj.稳定的；稳固的；牢固的；稳重的
 - [ ] homogenization n.同质化；均质化处理；匀浆
 - [ ] preceive v.观察
+- [ ] lamb n.羊羔
+- [ ] dispute v.&n.争论；争执；辩论；争夺
+- [ ] fierce adj.凶猛的；凶狠的；凶残的；狂热的
+- [ ] repute v.认为；看做；称为；评价 n.名誉
+- [ ] proclamation n.宣布，声明
+- [ ] versatile adj.通用的，多才多艺的
+- [ ] rectify v.纠正，改正
+- [ ] obsess v.使痴迷；使迷恋；使着迷；唠叨
