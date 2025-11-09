@@ -61,3 +61,7 @@
 - [ ] versatile adj.通用的，多才多艺的
 - [ ] rectify v.纠正，改正
 - [ ] obsess v.使痴迷；使迷恋；使着迷；唠叨
+- [ ] mammal n.哺乳动物
+- [ ] dwell v.居住，栖息
+- [ ] predator n.捕食者，掠夺者
+- [ ] tempt v.诱惑，吸引
