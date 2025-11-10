@@ -65,3 +65,6 @@
 - [ ] dwell v.居住，栖息
 - [ ] predator n.捕食者，掠夺者
 - [ ] tempt v.诱惑，吸引
+- [ ] aptitude n.天赋，能力
+- [ ] eradication n.消灭，拔除
+- [ ] evaporate v.蒸发，衰减，消失
