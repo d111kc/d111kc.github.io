@@ -131,3 +131,4 @@
 - [ ] tweak v.调整，微调
 - [x] inventory n.库存，财产清单
 - [ ] equivalently adv.等价地，相当于
+- [ ] intuitively adv.直观
