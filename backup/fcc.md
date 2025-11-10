@@ -133,3 +133,4 @@
 - [ ] equivalently adv.等价地，相当于
 - [ ] intuitively adv.直观
 - [ ] quadratic adj.平方的
+- [ ] logarithmic adj.对数的
