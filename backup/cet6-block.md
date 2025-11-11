@@ -68,3 +68,10 @@
 - [ ] aptitude n.天赋，能力
 - [ ] eradication n.消灭，拔除
 - [ ] evaporate v.蒸发，衰减，消失
+- [ ] pasta n.意大利面
+- [ ] shoot up 暴涨，激增，（血糖）升高
+- [ ] adverse adj.不利的，相反的
+- [ ] champion n.冠军 v.捍卫
+- [ ] intimate n.知己 v.暗示，表示
+- [ ] lump v.把……归并在一起 n.团，疙瘩
+- [ ] magnify v.放大，夸大
