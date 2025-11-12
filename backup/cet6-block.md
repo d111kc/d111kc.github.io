@@ -75,3 +75,12 @@
 - [ ] intimate n.知己 v.暗示，表示
 - [ ] lump v.把……归并在一起 n.团，疙瘩
 - [ ] magnify v.放大，夸大
+- [ ] monopolize v.垄断
+- [ ] debris n.碎片，残骸
+- [ ] autonomous adj.自治的
+- [ ] detach v.脱离，拆卸，离开
+- [ ] glamour n.魅力 v.迷住
+- [ ] imminent adj.即将发生的，临近的
+- [ ] outrageous adj.骇人的；无法容忍的；反常的；令人惊讶的
+- [ ] segment v.划分 n.部分，片段
+- [ ] spectrum n.光谱，领域，范围
