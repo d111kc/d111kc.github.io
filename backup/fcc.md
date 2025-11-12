@@ -135,3 +135,4 @@
 - [ ] quadratic adj.平方的
 - [ ] logarithmic adj.对数的
 - [ ] proportionally adv.按比例
+- [ ] deque n.双向队列
