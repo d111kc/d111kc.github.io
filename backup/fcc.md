@@ -138,3 +138,4 @@
 - [ ] deque n.双向队列
 - [ ] underlying adj.根本的，潜在的，隐含的
 - [ ] analogous adj.类似的，模拟的
+- [ ] arbitrary adj.任意的，武断的
