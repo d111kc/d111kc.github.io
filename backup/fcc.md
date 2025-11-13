@@ -136,3 +136,4 @@
 - [ ] logarithmic adj.对数的
 - [ ] proportionally adv.按比例
 - [ ] deque n.双向队列
+- [ ] underlying adj.根本的，潜在的，隐含的
