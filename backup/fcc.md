@@ -139,3 +139,4 @@
 - [ ] underlying adj.根本的，潜在的，隐含的
 - [ ] analogous adj.类似的，模拟的
 - [ ] arbitrary adj.任意的，武断的
+- [ ] amortize v.分期偿还
