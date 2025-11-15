@@ -84,3 +84,11 @@
 - [ ] outrageous adj.骇人的；无法容忍的；反常的；令人惊讶的
 - [ ] segment v.划分 n.部分，片段
 - [ ] spectrum n.光谱，领域，范围
+- [ ] chronic adj.慢性的，长期的
+- [ ] cholesterol n.胆固醇
+- [ ] conspicuous adj.明显的
+- [ ] deficit n.亏损，短缺
+- [ ] designate v.指定，指派，任命
+- [ ] assign v.指定，指派
+- [ ] detrimental adj.不利的，有害的
+- [ ] loophole n.漏洞
