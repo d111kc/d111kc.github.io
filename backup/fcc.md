@@ -141,3 +141,4 @@
 - [ ] arbitrary adj.任意的，武断的
 - [ ] amortize v.分期偿还
 - [ ] encapsulation n.封装
+- [ ] polymorphism n.多态
