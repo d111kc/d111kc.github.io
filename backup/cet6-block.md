@@ -92,3 +92,6 @@
 - [ ] assign v.指定，指派
 - [ ] detrimental adj.不利的，有害的
 - [ ] loophole n.漏洞
+- [ ] miniature adj.微型的 n.缩影
+- [ ] opt v.选择
+- [ ] synonymous adj.同义词的
