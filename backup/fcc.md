@@ -142,3 +142,4 @@
 - [ ] amortize v.分期偿还
 - [ ] encapsulation n.封装
 - [ ] polymorphism n.多态
+- [ ] bundle n.群，一大堆 v.扎，捆绑销售
