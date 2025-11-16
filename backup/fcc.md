@@ -145,3 +145,4 @@
 - [ ] bundle n.群，一大堆 v.扎，捆绑销售
 - [ ] deposit v.&n.存款
 - [ ] withdraw v.取款
+- [ ] tamper v.&n.干扰，篡改
