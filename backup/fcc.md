@@ -143,3 +143,5 @@
 - [ ] encapsulation n.封装
 - [ ] polymorphism n.多态
 - [ ] bundle n.群，一大堆 v.扎，捆绑销售
+- [ ] deposit v.&n.存款
+- [ ] withdraw v.取款
