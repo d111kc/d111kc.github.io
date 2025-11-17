@@ -147,3 +147,4 @@
 - [ ] withdraw v.取款
 - [ ] defy v.违抗，蔑视，使不能
 - [ ] tamper v.&n.干扰，篡改
+- [ ] mangle v.破坏 n.识别编码
