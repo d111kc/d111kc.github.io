@@ -95,3 +95,9 @@
 - [ ] miniature adj.微型的 n.缩影
 - [ ] opt v.选择
 - [ ] synonymous adj.同义词的
+- [ ] refute v.反驳，否认
+- [ ] arrogance n.傲慢，自大
+- [ ] incur v.遭受，引起
+- [ ] spectator n.观众
+- [ ] utter v.说，讲 adj.完全的，彻底的
+- [ ] rear v.抚养 n.屁股 adj.后面的
