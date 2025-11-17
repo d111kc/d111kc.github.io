@@ -151,3 +151,4 @@
 - [ ] intricate adj.错综复杂的
 - [ ] vertex n.顶点
 - [ ] bidirectional adj.双向的
+- [ ] cyclic adj.环状的，循环的
