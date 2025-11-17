@@ -150,3 +150,4 @@
 - [ ] mangle v.破坏 n.识别编码
 - [ ] intricate adj.错综复杂的
 - [ ] vertex n.顶点
+- [ ] bidirectional adj.双向的
