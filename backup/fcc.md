@@ -149,3 +149,4 @@
 - [ ] tamper v.&n.干扰，篡改
 - [ ] mangle v.破坏 n.识别编码
 - [ ] intricate adj.错综复杂的
+- [ ] vertex n.顶点
