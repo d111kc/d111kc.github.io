@@ -155,3 +155,4 @@
 - [ ] acyclic adj.非周期的，非循环的
 - [ ] maze n.迷宫
 - [ ] recursion n.递归
+- [ ] matrix n.矩阵
