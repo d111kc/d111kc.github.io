@@ -101,3 +101,6 @@
 - [ ] spectator n.观众
 - [ ] utter v.说，讲 adj.完全的，彻底的
 - [ ] rear v.抚养 n.屁股 adj.后面的
+- [ ] contempt n.蔑视，鄙视
+- [ ] futile adj.徒劳的，无用的
+- [ ] restoration n.修复，恢复
