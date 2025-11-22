@@ -104,3 +104,6 @@
 - [ ] contempt n.蔑视，鄙视
 - [ ] futile adj.徒劳的，无用的
 - [ ] restoration n.修复，恢复
+- [ ] precious adj.宝贵的
+- [ ] extravagant adj.奢侈的
+- [ ] sphere n.球，领域，范围
