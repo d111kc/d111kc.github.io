@@ -107,3 +107,13 @@
 - [ ] precious adj.宝贵的
 - [ ] extravagant adj.奢侈的
 - [ ] sphere n.球，领域，范围
+- [ ] abruptly adv.突然，立刻
+- [ ] additive adj.附加的 n.添加剂
+- [ ] ardently adv.狂热地，热烈地
+- [ ] besiege v.包围，围攻
+- [ ] channel n.频道，通道
+- [ ] crack v.&n.破解，裂缝
+- [ ] fracture v.&n.断裂，破碎
+- [ ] hollow adv.彻底  n.孔洞 adj.空心的
+- [ ] reshuffle v.&n.重新配置，改组
+- [ ] strive v.努力，奋斗，斗争
