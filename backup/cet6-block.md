@@ -117,3 +117,13 @@
 - [ ] hollow adv.彻底  n.孔洞 adj.空心的
 - [ ] reshuffle v.&n.重新配置，改组
 - [ ] strive v.努力，奋斗，斗争
+- [ ] render v.提供，给予，提交
+- [ ] verge v.濒临，倾向 n.边界
+- [ ] hijack v.劫持
+- [ ] inertia n.惯性，惰性
+- [ ] deteriorate v.退化，变质，恶化
+- [ ] erode v.侵蚀，腐蚀，削弱
+- [ ] monotonous adj.单调乏味的
+- [ ] stagnation n.停滞，萧条
+- [ ] stake n.股份，赌注，利害关系
+- [ ] stifle v.抑制，压制，阻止
