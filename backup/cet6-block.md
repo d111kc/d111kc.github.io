@@ -136,3 +136,4 @@
 - [ ] rage v.&n.发怒，狂暴
 - [ ] scrape v.&n.刮，擦
 - [ ] shrewd adj.精明的
+- [ ] thrifty adj.节俭的，节约的
