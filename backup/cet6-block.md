@@ -127,3 +127,12 @@
 - [ ] stagnation n.停滞，萧条
 - [ ] stake n.股份，赌注，利害关系
 - [ ] stifle v.抑制，压制，阻止
+- [ ] ideology n.意识形态
+- [ ] intrinsically adv.真正，本质地
+- [ ] irony n.反语 adj.铁的
+- [ ] majestic adj.庄严的，宏伟的
+- [ ] meadow n.草地，牧场
+- [ ] mingle adj.与……结合，交往
+- [ ] rage v.&n.发怒，狂暴
+- [ ] scrape v.&n.刮，擦
+- [ ] shrewd adj.精明的
