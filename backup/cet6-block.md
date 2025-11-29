@@ -137,3 +137,16 @@
 - [ ] scrape v.&n.刮，擦
 - [ ] shrewd adj.精明的
 - [ ] thrifty adj.节俭的，节约的
+- [ ] dispute v.&n.纠纷，争端
+- [ ] detrimental adj.不利的
+- [ ] envisage v.设想，想象
+- [ ] affectionate adj.有感情的
+- [ ] nourish v.滋养，养育
+- [ ] elapse v.流逝
+- [ ] erode v.侵蚀，腐蚀，损害
+- [ ] flatter v.奉承，讨好
+- [ ] flip v.翻转
+- [ ] asymmetry n.不对称
+- [ ] predominant adj.显著的
+- [ ] propagate v.传播，繁殖
+- [ ] tentatively adv.暂时性地
