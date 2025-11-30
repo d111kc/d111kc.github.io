@@ -150,3 +150,8 @@
 - [ ] predominant adj.显著的
 - [ ] propagate v.传播，繁殖
 - [ ] tentatively adv.暂时性地
+- [ ] assault v.&n.攻击，袭击
+- [ ] deport v.把……驱逐出境
+- [ ] dismiss v.摒弃，不予考虑
+- [ ] perpetually adv.永恒地，持久地
+- [ ] prescribe v.规定，命令，指示 n.处方药
