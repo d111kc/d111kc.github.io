@@ -163,3 +163,4 @@
 - [ ] incredibly adv.极端地，极其，难以置信地
 - [ ] hierarchical adj.等级值的，按等级划分的
 - [ ] casualty n.死者，伤员
+- [ ] moral n.寓意，品行 adj.有道德的
