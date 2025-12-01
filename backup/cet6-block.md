@@ -155,3 +155,11 @@
 - [ ] dismiss v.摒弃，不予考虑
 - [ ] perpetually adv.永恒地，持久地
 - [ ] prescribe v.规定，命令，指示 n.处方药
+- [ ] moderate adj.&n.温和的（人），适度的 v.缓和
+- [ ] mortality n.死亡率，死亡数量
+- [ ] overt adj.公开的，不隐瞒的
+- [ ] probe v.调查，
+- [ ] sceptically/skeptically adv.怀疑地
+- [ ] incredibly adv.极端地，极其，难以置信地
+- [ ] hierarchical adj.等级值的，按等级划分的
+- [ ] casualty n.死者，伤员
