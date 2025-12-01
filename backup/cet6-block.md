@@ -164,3 +164,4 @@
 - [ ] hierarchical adj.等级值的，按等级划分的
 - [ ] casualty n.死者，伤员
 - [ ] moral n.寓意，品行 adj.有道德的
+- [ ] immediate adj.附近的，及时的
