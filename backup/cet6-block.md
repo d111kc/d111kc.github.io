@@ -165,3 +165,12 @@
 - [ ] casualty n.死者，伤员
 - [ ] moral n.寓意，品行 adj.有道德的
 - [ ] immediate adj.附近的，及时的
+- [ ] alleviate v.减轻
+- [ ] clarify n.清晰
+- [ ] maternity n.怀孕
+- [ ] inhibit v.抑制；阻止；阻碍；使拘束
+- [ ] interrogation n.审问，审讯
+- [ ] intrinsically adv.真正；从本质上来说；内在地；固有地
+- [ ] loose v.释放 adj.疏松的
+- [ ] mandatory adj.强制的，义务的
+- [ ] sooth adj.真正的 n.实际
