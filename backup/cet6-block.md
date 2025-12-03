@@ -183,3 +183,4 @@
 - [ ] preceding adj.先前的，在前面的
 - [ ] recklessly adv.鲁莽地，不顾一切地
 - [ ] spectrum n.光谱
+- [ ] eclipse n.日食，月食，黯然失色 v.使相形见绌，使……丧失重要性
