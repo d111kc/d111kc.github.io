@@ -174,3 +174,12 @@
 - [ ] loose v.释放 adj.疏松的
 - [ ] mandatory adj.强制的，义务的
 - [ ] sooth adj.真正的 n.实际
+- [ ] bounce v.反弹，反射
+- [ ] dispersion n.分散，散开
+- [ ] eccentric adj.古怪的
+- [ ] perceive v.认为，注意到
+- [ ] permeate v.渗透，弥漫
+- [ ] ponder v.深思，仔细考虑
+- [ ] preceding adj.先前的，在前面的
+- [ ] recklessly adv.鲁莽地，不顾一切地
+- [ ] spectrum n.光谱
