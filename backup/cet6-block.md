@@ -191,3 +191,4 @@
 - [ ] speculative adj.猜测的，推测的
 - [ ] unanimous adj.一致的，一致同意的
 - [ ] ascertain v.弄清，查明
+- [ ] deceptive adj.欺骗性的，误导的
