@@ -184,3 +184,10 @@
 - [ ] recklessly adv.鲁莽地，不顾一切地
 - [ ] spectrum n.光谱
 - [ ] eclipse n.日食，月食，黯然失色 v.使相形见绌，使……丧失重要性
+- [ ] discourse n.话语
+- [ ] marvel n.奇迹
+- [ ] remnant n.残余部分
+- [ ] manuscript n.手稿
+- [ ] speculative adj.猜测的，推测的
+- [ ] unanimous adj.一致的，一致同意的
+- [ ] ascertain v.弄清，查明
