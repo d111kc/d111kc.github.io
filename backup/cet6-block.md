@@ -192,3 +192,12 @@
 - [ ] unanimous adj.一致的，一致同意的
 - [ ] ascertain v.弄清，查明
 - [ ] deceptive adj.欺骗性的，误导的
+- [ ] correlation n.关联
+- [ ] deter v.阻止
+- [ ] imperative adj.至关重要的，必要的
+- [ ] recreational adj.娱乐的
+- [ ] rotten adj.腐烂的
+- [ ] sprawl n.&v.肆意扩张，蔓延
+- [ ] vibrate v.振动
+- [ ] vicinity n.邻近，附近
+- [ ] irrespective adj.不考虑的，不顾的
