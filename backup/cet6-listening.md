@@ -12,3 +12,9 @@
 - [ ] eternal
 - [ ] diminishing
 - [ ] magnitude
+- [ ] provision n.提供，准备，条款
+- [ ] connotation n.含义，内涵
+- [ ] laborious adj.辛苦的
+- [ ] oppress v.欺压，压迫
+- [ ] suicide n.&v.&adj.自杀
+- [ ] susceptible adj.易受影响的，敏感的
