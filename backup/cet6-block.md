@@ -220,3 +220,4 @@
 - [ ] deceive v.欺骗
 - [ ] maneuver n.演习，花招 v.操纵
 - [ ] steer v.驾驶，操纵
+- [ ] obsession n.着迷，痴迷
