@@ -207,3 +207,16 @@
 - [ ] nevertheless adv.然而，不过
 - [ ] devise v.设计，想出
 - [ ] retort v.反击，反驳
+- [ ] apt adj.合适的，恰当的
+- [ ] flat adj.平坦的 n.公寓
+- [ ] fraction n.分数，少量
+- [ ] overflow v.充满
+- [ ] parasite n.寄生虫，寄生植物
+- [ ] sparingly adv.节省地
+- [ ] sprinkle v.洒
+- [ ] stimulate v.刺激，激发
+- [ ] sturdy adj.坚实的，坚固的
+- [ ] synonymous  adj.同义的，等同于……的
+- [ ] deceive v.欺骗
+- [ ] maneuver n.演习，花招 v.操纵
+- [ ] steer v.驾驶，操纵
