@@ -201,3 +201,9 @@
 - [ ] vibrate v.振动
 - [ ] vicinity n.邻近，附近
 - [ ] irrespective adj.不考虑的，不顾的
+- [ ] testimony n.证词
+- [ ] wrestle v.摔跤，扭打
+- [ ] otherwise adv.原本，否则
+- [ ] nevertheless adv.然而，不过
+- [ ] devise v.设计，想出
+- [ ] retort v.反击，反驳
