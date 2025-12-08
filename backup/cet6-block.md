@@ -221,3 +221,8 @@
 - [ ] maneuver n.演习，花招 v.操纵
 - [ ] steer v.驾驶，操纵
 - [ ] obsession n.着迷，痴迷
+- [ ] probe v.&n.调查，宇宙探测器
+- [ ] saturated adj.饱和的
+- [ ] rigorous adj.谨慎的，彻底的，严格的
+- [ ] discrepancy n.差异，不符
+- [ ] articulate v.明确表达，口齿清楚地说
