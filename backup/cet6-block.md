@@ -226,3 +226,7 @@
 - [ ] rigorous adj.谨慎的，彻底的，严格的
 - [ ] discrepancy n.差异，不符
 - [ ] articulate v.明确表达，口齿清楚地说
+- [ ] utterly adv.完全地，彻底地
+- [ ] formidable adj.可怕的，强大的
+- [ ] outperform v.超过，胜过
+- [ ] warrant n.依据，许可证 v.保证，使正当
