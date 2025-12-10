@@ -230,3 +230,7 @@
 - [ ] formidable adj.可怕的，强大的
 - [ ] outperform v.超过，胜过
 - [ ] warrant n.依据，许可证 v.保证，使正当
+- [ ] obscure adj.鲜为人知的，难以处理的  v.使模糊，使隐晦
+- [ ] evaporation n.蒸发，消失
+- [ ] exotic adj.外来的，异国的
+- [ ] refrain v.避免，克制，节制
