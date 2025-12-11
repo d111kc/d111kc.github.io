@@ -234,3 +234,12 @@
 - [ ] evaporation n.蒸发，消失
 - [ ] exotic adj.外来的，异国的
 - [ ] refrain v.避免，克制，节制
+- [ ] barely adv.几乎没有，仅仅
+- [ ] incredible adj.极大的，极好的，难以置信的
+- [ ] escort v.护送，护卫
+- [ ] indignant adj.愤怒的
+- [ ] overriding adj.最重要的，首要的
+- [ ] presumably adv.很可能，大概
+- [ ] stifle v.使窒息，压制
+- [ ] haunt v.闹鬼，出没 n.常去的地方
+- [ ] wrestle v.&n.摔跤，搏斗
