@@ -5,7 +5,7 @@
 - [ ] embark v.上船，从事
 - [ ] desperate adj.渴望的，绝望的
 - [ ] elimination n.消除，排除
-- [ ] deterioration v.变质，退化，恶化
+- [ ] deterioration n.变质，退化，恶化
 - [ ] relay v.转发，转播 n.轮换者，接班人
 - [ ] notably adv.特别；非常；尤其；极大程度上
 - [ ] incidental adj.次要的，偶然的
