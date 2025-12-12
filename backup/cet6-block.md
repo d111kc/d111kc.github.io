@@ -243,3 +243,13 @@
 - [ ] stifle v.使窒息，压制
 - [ ] haunt v.闹鬼，出没 n.常去的地方
 - [ ] wrestle v.&n.摔跤，搏斗
+- [ ] pigeon n.鸽子
+- [ ] dubious adj.怀疑的，不确定的
+- [ ] shabby adj.破败的
+- [ ] tract n.一大片
+- [ ] specimen n.标本，样品
+- [ ] plaza n.广场，购物中心
+- [ ] expire v.过期，失效
+- [ ] edible adj.可食用的
+- [ ] deplete v.减少
+- [ ] delicacy n.佳肴
