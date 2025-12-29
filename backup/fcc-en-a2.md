@@ -4,3 +4,4 @@
 - [ ] graphic n.图形 adj.生动的
 - [ ] Welcome abroad.欢迎，拥有欢迎刚加入团队的新人
 - [ ] How do you like...? 询问看法
+- [ ] Let me show you to ... 让我带你参观某地
