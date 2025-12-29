@@ -156,3 +156,4 @@
 - [ ] maze n.迷宫
 - [ ] recursion n.递归
 - [ ] matrix n.矩阵
+- [ ] consolidate v.合并，强化，加强
