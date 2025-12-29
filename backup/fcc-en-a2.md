@@ -1,0 +1,1 @@
+- [ ] contraction n.缩写
