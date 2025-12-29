@@ -1,1 +1,3 @@
 - [ ] contraction n.缩写
+- [ ] pronoun n.代词
+- [ ] affirmative n.&adj.肯定（的）
