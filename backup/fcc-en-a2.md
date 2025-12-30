@@ -10,3 +10,4 @@
 - [ ] article n.文章，冠词
 - [ ] ergonomic adj.人体工学的
 - [ ] plural n.&adj.复数（的）
+- [ ] mug n.马克杯
