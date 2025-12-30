@@ -11,3 +11,4 @@
 - [ ] ergonomic adj.人体工学的
 - [ ] plural n.&adj.复数（的）
 - [ ] mug n.马克杯
+- [ ] buttock n.臀部
