@@ -160,3 +160,4 @@
 - [ ] slime n.史莱姆，粘液
 - [ ] dagger n.匕首
 - [ ] fanged adj.有毒牙的，有尖牙的
+- [ ] dodge v.&n.躲避，逃避
