@@ -12,3 +12,4 @@
 - [ ] plural n.&adj.复数（的）
 - [ ] mug n.马克杯
 - [ ] buttock n.臀部
+- [ ] gadget n.小玩意，小工具
