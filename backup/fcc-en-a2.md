@@ -6,3 +6,4 @@
 - [ ] How do you like...? 询问看法
 - [ ] Let me show you to ... 让我带你参观某地
 - [ ] Everything looks great.
+- [ ] Hi there.用于第一次见面打招呼
