@@ -158,3 +158,4 @@
 - [ ] matrix n.矩阵
 - [ ] consolidate v.合并，强化，加强
 - [ ] slime n.史莱姆，粘液
+- [ ] dagger n.匕首
