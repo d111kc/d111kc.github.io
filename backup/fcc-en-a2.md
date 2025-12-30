@@ -8,3 +8,4 @@
 - [ ] Everything looks great.
 - [ ] Hi there.用于第一次见面打招呼
 - [ ] article n.文章，冠词
+- [ ] ergonomic adj.人体工学的
