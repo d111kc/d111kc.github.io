@@ -20,3 +20,4 @@
 - [ ] optimum adj.最佳的 n.最优的结果
 - [ ] consonant n.辅音（字母） adj.和谐的
 - [ ] vowel n.元音
+- [ ] indefinite adj.不确定的
