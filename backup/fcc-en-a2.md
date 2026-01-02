@@ -18,3 +18,4 @@
 - [ ] You are into...对……感兴趣
 - [ ] proximity n.邻近，接近
 - [ ] optimum adj.最佳的 n.最优的结果
+- [ ] consonant n.辅音（字母） adj.和谐的
