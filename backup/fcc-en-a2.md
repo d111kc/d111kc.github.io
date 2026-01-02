@@ -16,3 +16,4 @@
 - [ ] gadget n.小玩意，小工具
 - [ ] attentive adj.注意的，仔细的
 - [ ] You are into...对……感兴趣
+- [ ] proximity n.邻近，接近
