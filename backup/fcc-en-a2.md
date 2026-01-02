@@ -17,3 +17,4 @@
 - [ ] attentive adj.注意的，仔细的
 - [ ] You are into...对……感兴趣
 - [ ] proximity n.邻近，接近
+- [ ] optimum adj.最佳的 n.最优的结果
