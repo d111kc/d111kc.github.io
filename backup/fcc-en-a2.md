@@ -22,3 +22,4 @@
 - [ ] vowel n.元音
 - [ ] indefinite adj.不确定的
 - [ ] modal adj.形式的，情态的
+- [ ] groovy adj.时髦的，绝妙的
