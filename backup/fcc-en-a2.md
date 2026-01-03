@@ -21,3 +21,4 @@
 - [ ] consonant n.辅音（字母） adj.和谐的
 - [ ] vowel n.元音
 - [ ] indefinite adj.不确定的
+- [ ] modal adj.形式的，情态的
