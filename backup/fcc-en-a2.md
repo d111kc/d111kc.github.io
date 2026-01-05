@@ -25,3 +25,4 @@
 - [ ] groovy adj.时髦的，绝妙的
 - [ ] look who's here 很惊讶碰到了某人
 - [ ] How is everything? 最近过得怎样
+- [ ] Let me introduce you to [name]
