@@ -162,3 +162,4 @@
 - [ ] fanged adj.有毒牙的，有尖牙的
 - [ ] dodge v.&n.躲避，逃避
 - [ ] shuffle v.&n.洗牌，随机播放，混合
+- [ ] sparse adj.稀少的，稀疏的
