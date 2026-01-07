@@ -31,3 +31,5 @@
 - [ ] preposition n.介词
 - [ ] contactless adj.非接触式的
 - [ ] swipe v.&n.击打，滑动，刷卡
+- [ ] get in 进入
+- [ ] get out 离开
