@@ -28,3 +28,4 @@
 - [ ] Let me introduce you to [name]
 - [ ] possessive n.所有格 adj.占用的
 - [ ] apostrophe n.单引号，撇号
+- [ ] preposition n.介词
