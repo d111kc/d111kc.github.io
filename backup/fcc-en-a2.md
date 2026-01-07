@@ -29,3 +29,4 @@
 - [ ] possessive n.所有格 adj.占用的
 - [ ] apostrophe n.单引号，撇号
 - [ ] preposition n.介词
+- [ ] contactless adj.非接触式的
