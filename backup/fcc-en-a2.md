@@ -30,3 +30,4 @@
 - [ ] apostrophe n.单引号，撇号
 - [ ] preposition n.介词
 - [ ] contactless adj.非接触式的
+- [ ] swipe v.&n.击打，滑动，刷卡
