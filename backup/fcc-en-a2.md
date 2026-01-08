@@ -36,3 +36,4 @@
 - [ ] How was it? 怎么样
 - [ ] syllable n.音节 v.把……分成音节
 - [ ] squid n.鱿鱼
+- [ ] sentiment n.情绪，看法
