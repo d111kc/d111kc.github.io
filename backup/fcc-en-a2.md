@@ -39,3 +39,5 @@
 - [ ] sentiment n.情绪，看法
 - [ ] karate n.空手道
 - [ ] participle n.分词
+- [ ] User Experience,UX
+- [ ] User Interface,UI
