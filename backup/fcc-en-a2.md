@@ -38,3 +38,4 @@
 - [ ] squid n.鱿鱼
 - [ ] sentiment n.情绪，看法
 - [ ] karate n.空手道
+- [ ] participle n.分词
