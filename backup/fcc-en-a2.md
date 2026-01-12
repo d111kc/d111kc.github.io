@@ -41,3 +41,4 @@
 - [ ] participle n.分词
 - [ ] User Experience,UX
 - [ ] User Interface,UI
+- [ ] judo n.柔道
