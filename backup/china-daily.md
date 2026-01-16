@@ -1,0 +1,34 @@
+- [ ] interdisciplinary adj.跨学科的
+- [ ] vigorously adv.活泼地
+- [ ] proactively adv.积极，主动地
+- [ ] corridor n.通道，过道，走廊
+- [ ] unfold v.打开，显露，开展，呈现
+- [ ] burgeon v.激增，迅速发展 n.嫩芽
+- [ ] portfolio n.文件夹；职务，作品集；档案
+- [ ] debut v.初次登场，出道
+- [ ] ceasefire n.停战，停火
+- [ ] exert v.施加，努力，发挥
+- [ ] concession n.让步，优惠，妥协
+- [ ] conjecture n.&v.猜想，推测
+- [ ] thick adj.充满的，弥漫的
+- [ ] aroma n.香味
+- [ ] dough n.生面团，现金
+- [ ] sizzle n.&v.发出滋滋声
+- [ ] chili n.辣椒
+- [ ] pepper n.&v.撒胡椒粉
+- [ ] drizzle n.&v.下毛毛雨
+- [ ] tantalize v.挑逗，逗弄
+- [ ] spicy adj.辛辣的，有香料的
+- [ ] zest n.热情，狂热，风味
+- [ ] creamy adj.光滑细腻的，像奶油的
+- [ ] hail n.欢呼，致敬 v.下冰雹
+- [ ] helm v.掌握，掌舵 n.舵
+- [ ] dizzy adj.头晕目眩的 v.使头晕
+- [ ] cellist n.大提琴手
+- [ ] spontaneous adj.自发的，自然产生的，心血来潮的
+- [ ] synergy n.协同作用
+- [ ] genre n.类型，流派，体裁
+- [ ] infuse v.注入，使具有
+- [ ] dormant adj.休眠的，静止的
+- [ ] millennium n.一千年
+- [ ] inbound adj.到达的，归航的
