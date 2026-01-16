@@ -165,3 +165,4 @@
 - [ ] sparse adj.稀少的，稀疏的
 - [ ] bidirectional n.双向的
 - [ ] overlap v.&n.交叠，重叠
+- [ ] underlying adj.根本的，潜在的，基本的
