@@ -163,3 +163,4 @@
 - [ ] dodge v.&n.躲避，逃避
 - [ ] shuffle v.&n.洗牌，随机播放，混合
 - [ ] sparse adj.稀少的，稀疏的
+- [ ] bidirectional n.双向的
