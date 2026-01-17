@@ -43,3 +43,4 @@
 - [ ] User Interface,UI
 - [ ] judo n.柔道
 - [ ] sue v.控告
+- [ ] mandatory adj.强制的，法定的，义务的
