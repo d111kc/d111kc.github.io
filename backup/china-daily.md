@@ -34,3 +34,4 @@
 - [ ] inbound adj.到达的，归航的
 - [ ] sauce n.酱料 v.加料
 - [ ] unabated adj.不衰退的
+- [ ] authentic adj.真正的，可靠的，可信的
