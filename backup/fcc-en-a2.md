@@ -46,3 +46,4 @@
 - [ ] mandatory adj.强制的，法定的，义务的
 - [ ] bond v.&n.结合，增强信任关系
 - [ ] To be into... 对……感兴趣
+- [ ] Monopoly 大富翁游戏
