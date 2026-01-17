@@ -32,3 +32,4 @@
 - [ ] dormant adj.休眠的，静止的
 - [ ] millennium n.一千年
 - [ ] inbound adj.到达的，归航的
+- [ ] sauce n.酱料 v.加料
