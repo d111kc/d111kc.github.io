@@ -51,3 +51,4 @@
 - [ ] present perfect 现在完成时
 - [ ] Gartic 你画我猜游戏
 - [ ] definite adj.&n.肯定的（事），确定的
+- [ ] gaze v.&n.凝视，注视
