@@ -1,2 +1,3 @@
 - [ ] empress n.皇后，女皇
 - [ ] ape n.类人猿 v.模仿
+- [ ] trolley n.&v.（乘）电车
