@@ -2,3 +2,4 @@
 - [ ] ape n.类人猿 v.模仿
 - [ ] trolley n.&v.（乘）电车
 - [ ] puppy n.小狗
+- [ ] referee n.&v.裁判，仲裁
