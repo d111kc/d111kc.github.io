@@ -5,3 +5,4 @@
 - [ ] referee n.&v.裁判，仲裁
 - [ ] puppet n.木偶，傀儡
 - [ ] graze v.放牧，吃草 n.擦伤
+- [ ] fabulous adj.极好的，绝妙的
