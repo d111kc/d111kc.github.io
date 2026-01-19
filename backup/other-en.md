@@ -3,3 +3,4 @@
 - [ ] trolley n.&v.（乘）电车
 - [ ] puppy n.小狗
 - [ ] referee n.&v.裁判，仲裁
+- [ ] puppet n.木偶，傀儡
