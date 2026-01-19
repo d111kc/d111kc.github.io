@@ -4,3 +4,4 @@
 - [ ] puppy n.小狗
 - [ ] referee n.&v.裁判，仲裁
 - [ ] puppet n.木偶，傀儡
+- [ ] graze v.放牧，吃草 n.擦伤
