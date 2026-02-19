@@ -1,2 +1,3 @@
 - [ ] caprice n.善变，任性，异想天开
 - [ ] reckless adj.鲁莽的
+- [ ] preparatory adj.预备的 adv.在先前
