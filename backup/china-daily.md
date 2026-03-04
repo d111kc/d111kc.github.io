@@ -38,3 +38,4 @@
 - [ ] cosmic adj.宇宙的，巨大且重要的
 - [ ] unravel v.解开，解体，拆开
 - [ ] rebound v.&n.反弹
+- [ ] berth n.铺位 v.停泊
