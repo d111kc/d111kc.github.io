@@ -39,3 +39,4 @@
 - [ ] unravel v.解开，解体，拆开
 - [ ] rebound v.&n.反弹
 - [ ] berth n.铺位 v.停泊
+- [ ] apparel n.服装 v.装饰
