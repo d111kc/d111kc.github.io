@@ -168,3 +168,4 @@
 - [ ] underlying adj.根本的，潜在的，基本的
 - [ ] aggregate adj.&v.总计（的）
 - [ ] prevalence n.卓越，流行
+- [ ] proprietary n.所有权，所有物 adj.专利的，专卖的
