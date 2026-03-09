@@ -1,7 +1,7 @@
 - [ ] derive v衍生，派生
 - [ ] credential n.凭证 adj.信任的
 - [ ] gradient
-- [ ] Hex
+- [ ] hibernation n.冬眠，休眠
 - [ ] HSL 
 - [ ] perception n.感知
 - [ ] primary colors 原色，黄蓝红
