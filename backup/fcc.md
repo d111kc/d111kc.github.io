@@ -2,7 +2,7 @@
 - [ ] credential n.凭证 adj.信任的
 - [ ] gradient
 - [ ] hibernation n.冬眠，休眠
-- [ ] HSL 
+- [ ] compatibility n.兼容，并存
 - [ ] perception n.感知
 - [ ] primary colors 原色，黄蓝红
 - [ ] secondary colors 间色，两种原色等量混合得到
