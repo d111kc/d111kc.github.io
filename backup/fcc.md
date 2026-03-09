@@ -1,5 +1,5 @@
 - [ ] derive v衍生，派生
-- [ ] radial
+- [ ] credential n.凭证 adj.信任的
 - [ ] gradient
 - [ ] Hex
 - [ ] HSL 
