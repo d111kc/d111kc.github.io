@@ -1,4 +1,4 @@
-- [ ] linear
+- [ ] derive v衍生，派生
 - [ ] radial
 - [ ] gradient
 - [ ] Hex
