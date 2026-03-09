@@ -167,3 +167,4 @@
 - [ ] overlap v.&n.交叠，重叠
 - [ ] underlying adj.根本的，潜在的，基本的
 - [ ] aggregate adj.&v.总计（的）
+- [ ] prevalence n.卓越，流行
