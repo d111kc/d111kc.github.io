@@ -169,3 +169,4 @@
 - [ ] aggregate adj.&v.总计（的）
 - [ ] prevalence n.卓越，流行
 - [ ] proprietary n.所有权，所有物 adj.专利的，专卖的
+- [ ] hypervisor n.管理程序，虚拟层
