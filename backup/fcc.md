@@ -1,4 +1,5 @@
 - [ ] derive v衍生，派生
+- [ ] deamon n.守护进程，虚拟光驱
 - [ ] credential n.凭证 adj.信任的
 - [ ] gradient
 - [ ] hibernation n.冬眠，休眠
