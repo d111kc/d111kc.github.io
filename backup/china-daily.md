@@ -42,3 +42,4 @@
 - [ ] apparel n.服装 v.装饰
 - [ ] incense n.熏香，香气 v.激怒
 - [ ] unwind v.放松，解开
+- [ ] aromatherapy n.芳香疗法
