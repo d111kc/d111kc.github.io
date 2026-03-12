@@ -40,3 +40,4 @@
 - [ ] rebound v.&n.反弹
 - [ ] berth n.铺位 v.停泊
 - [ ] apparel n.服装 v.装饰
+- [ ] incense n.熏香，香气 v.激怒
