@@ -46,3 +46,4 @@
 - [ ] scent n.香味 v.嗅出
 - [ ] rapeseed n.油菜籽
 - [ ] backdrop n.背景板，舞台背景
+- [ ] glide n.&v. 滑翔，滑动
