@@ -49,3 +49,4 @@
 - [ ] glide n.&v. 滑翔，滑动
 - [ ] headwind n.逆风，顶风
 - [ ] escalate v.不断恶化，升级
+- [ ] volatility n.挥发，波动，反复无常
