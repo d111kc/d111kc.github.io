@@ -47,3 +47,4 @@
 - [ ] rapeseed n.油菜籽
 - [ ] backdrop n.背景板，舞台背景
 - [ ] glide n.&v. 滑翔，滑动
+- [ ] headwind n.逆风，顶风
