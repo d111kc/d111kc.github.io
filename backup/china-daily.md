@@ -50,3 +50,4 @@
 - [ ] headwind n.逆风，顶风
 - [ ] escalate v.不断恶化，升级
 - [ ] volatility n.挥发，波动，反复无常
+- [ ] shed v.摆脱，去除 n.工棚
