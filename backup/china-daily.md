@@ -35,6 +35,7 @@
 - [ ] sauce n.酱料 v.加料
 - [ ] unabated adj.不衰退的
 - [ ] authentic adj.真正的，可靠的，可信的
+- [ ] rejuvenate v.使年轻，使更有活力
 - [ ] cosmic adj.宇宙的，巨大且重要的
 - [ ] unravel v.解开，解体，拆开
 - [ ] rebound v.&n.反弹
