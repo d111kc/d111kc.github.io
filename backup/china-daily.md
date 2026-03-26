@@ -52,3 +52,4 @@
 - [ ] escalate v.不断恶化，升级
 - [ ] volatility n.挥发，波动，反复无常
 - [ ] shed v.摆脱，去除 n.工棚
+- [ ] pilot adj.试验性的，试点的 v.试点，驾驶，引导 n.飞行员，领航员
