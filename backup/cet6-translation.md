@@ -1,0 +1,13 @@
+- [ ] ritual
+- [ ] jubilance
+- [ ] extensively
+- [ ] versatile
+- [ ] integrity
+- [ ] exhibit
+- [ ] vitality
+- [ ] harsh
+- [ ] embody
+- [ ] unwavering perseverance 坚韧不拔
+- [ ] esteem
+- [ ] intricate
+- [ ] calligrapher n.书法家

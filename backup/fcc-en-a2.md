@@ -1,0 +1,56 @@
+- [ ] contraction n.缩写
+- [ ] abbreviate v.缩写
+- [ ] pronoun n.代词
+- [ ] affirmative n.&adj.肯定（的）
+- [ ] graphic n.图形 adj.生动的
+- [ ] Welcome abroad.欢迎，拥有欢迎刚加入团队的新人
+- [ ] How do you like...? 询问看法
+- [ ] Let me show you to ... 让我带你参观某地
+- [ ] Everything looks great.
+- [ ] Hi there.用于第一次见面打招呼
+- [ ] article n.文章，冠词
+- [ ] ergonomic adj.人体工学的
+- [ ] plural n.&adj.复数（的）
+- [ ] mug n.马克杯
+- [ ] buttock n.臀部
+- [ ] gadget n.小玩意，小工具
+- [ ] attentive adj.注意的，仔细的
+- [ ] You are into...对……感兴趣
+- [ ] proximity n.邻近，接近
+- [ ] optimum adj.最佳的 n.最优的结果
+- [ ] consonant n.辅音（字母） adj.和谐的
+- [ ] vowel n.元音
+- [ ] indefinite adj.不确定的
+- [ ] modal adj.形式的，情态的
+- [ ] groovy adj.时髦的，绝妙的
+- [ ] look who's here 很惊讶碰到了某人
+- [ ] How is everything? 最近过得怎样
+- [ ] Let me introduce you to [name]
+- [ ] possessive n.所有格 adj.占用的
+- [ ] apostrophe n.单引号，撇号
+- [ ] preposition n.介词
+- [ ] contactless adj.非接触式的
+- [ ] swipe v.&n.击打，滑动，刷卡
+- [ ] get in 进入
+- [ ] get out 离开
+- [ ] How was it? 怎么样
+- [ ] syllable n.音节 v.把……分成音节
+- [ ] squid n.鱿鱼
+- [ ] sentiment n.情绪，看法
+- [ ] karate n.空手道
+- [ ] participle n.分词
+- [ ] User Experience,UX
+- [ ] User Interface,UI
+- [ ] judo n.柔道
+- [ ] sue v.控告
+- [ ] mandatory adj.强制的，法定的，义务的
+- [ ] bond v.&n.结合，增强信任关系
+- [ ] To be into... 对……感兴趣
+- [ ] Monopoly 大富翁游戏
+- [ ] Ticket To Ride 车票之旅游戏
+- [ ] present perfect 现在完成时
+- [ ] Gartic 你画我猜游戏
+- [ ] definite adj.&n.肯定的（事），确定的
+- [ ] gaze v.&n.凝视，注视
+- [ ] itch n.&v.渴望
+- [ ] equator n.赤道
