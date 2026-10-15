@@ -1,0 +1,175 @@
+- [ ] derive v衍生，派生
+- [ ] detach v.脱离，拆卸，派遣
+- [ ] dispatch n.&v.派遣，调度
+- [ ] deamon n.守护进程，虚拟光驱
+- [ ] credential n.凭证 adj.信任的
+- [ ] gradient
+- [ ] hibernation n.冬眠，休眠
+- [ ] compatibility n.兼容，并存
+- [ ] perception n.感知
+- [ ] primary colors 原色，黄蓝红
+- [ ] secondary colors 间色，两种原色等量混合得到
+- [ ] tertiary colors 复色，原色和间色混合得到
+- [ ] hue n.色调，颜色
+- [ ] derive v.由来
+- [ ] coziness n.舒适，安逸
+- [ ] evoke v.唤起
+- [ ] serenity n.宁静
+- [ ] palette n.调色板
+- [ ] scheme n.方案
+- [ ] analogous adj.类似的
+- [ ] cohesive adj.有结合力的
+- [ ] adjacent adj.邻近的
+- [ ] magenta n.品红色
+- [ ] complementary adj.互补的
+- [ ] triadic adj.三元，三色的
+- [ ] vibrant adj.充满生机的，鲜艳的
+- [ ] equidistant adj.等距离的
+- [ ] monochromatic adj.单色的
+- [ ] saturation n.饱和度
+- [ ] soothe v.安慰
+- [ ] prototype n.原型，样板
+- [ ] versatile adj.通用的
+- [ ] spectrum n.光谱
+- [ ] transform v.转换，变换，几何变换
+- [ ] overflow v.溢出
+- [ ] filter
+- [ ] rotate v.旋转
+- [ ] scale v.缩放
+- [ ] skew v.扭曲
+- [ ] translate v.平移
+- [ ] clockwise adj.顺时针方向的
+- [ ] seizure v.发作 n.癫痫
+- [ ] collapse v.坍塌，崩溃
+- [ ] flexbox n.弹性盒子
+- [ ] perpendicular adj.&n.垂直
+- [ ] wrap v.包裹，换行
+- [ ] evenly adv.均匀地
+- [ ] envision v.想象，展望
+- [ ] justify v.两端对齐
+- [ ] typography n.印刷（术），排版
+- [ ] typeface n.字体
+- [ ] serif n.衬线字体，宋体等印刷体
+- [ ] sans serif 无衬线字体，黑体等电子设备常用字体
+- [ ] oblique n.&v.倾斜
+- [ ] condense v.压缩
+- [ ] ascender n.上升笔画
+- [ ] descender n.下降物
+- [ ] kern n.字符间距
+- [ ] dense adj.密集的
+- [ ] generic adj.通用的
+- [ ] portfolio n.作品集，档案，文件夹
+- [ ] glyph n.字形
+- [ ] customize v.定制
+- [ ] simultaneous adj.同步的，同时的
+- [ ] compatibility n.兼容性，和睦相处
+- [ ] render v.渲染，提供
+- [ ] sticky adj.粘性的
+- [ ] symbiosis n.共生，合作关系
+- [ ] optimal adj.最好的，最适宜的
+- [ ] granular adj.由颗粒构成的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] traction n.牵引力，拉力
+- [ ] cornerstone n.基础
+- [ ] optimize v.充分利用，使最优化
+- [ ] outset n.开始
+- [ ] exemplify v.举例证明，示范
+- [ ] essence n.本质，精髓
+- [ ] predominantly adv.主要地
+- [ ] conceptualize v.构思，概念化
+- [ ] proportionally adv.按比例
+- [ ] employ v.使用，雇用
+- [ ] invisible adj.看不见的
+- [ ] grid n.网格
+- [ ] fractional adj.分数的，小数的，很少的
+- [ ] redundance n.冗余
+- [ ] implicit adj.含蓄的
+- [ ] explicit adj.明确的，易于理解的
+- [ ] rigid adj.死板的，严格的
+- [ ] cybersecurity n.网络安全
+- [ ] malware n.恶意软件，电脑病毒
+- [ ] compatible adj.兼容的
+- [ ] scrape v.刮，擦伤
+- [ ] abbreviation n.缩写，约分
+- [ ] duplicate v.复制
+- [ ] squash v.挤压
+- [ ] flush v.&n.强制刷新，脸红
+- [ ] curly braces 花括号
+- [x] immutable adj.不可变的
+- [ ] primitive type 基本类型
+- [ ] reference type 引用类型
+- [ ] sock n.短袜，重击
+- [ ] excerpt n.摘录，节选，片段
+- [ ] sleeve n.袖子
+- [ ] arithmetic n.算术
+- [ ] parameter n.形参
+- [ ] argument n.实参
+- [ ] inherent adj.天生的，固有的
+- [ ] compact adj.紧凑的 n.契约
+- [ ] enumerate v.枚举，列举
+- [ ] rigorous adj.严谨的，严格的，细致的
+- [ ] resume n.简历 v.继续
+- [ ] vanilla adj.普通的，寻常的
+- [ ] asynchronously adv.异步
+- [ ] mitigate v.缓解
+- [ ] accordingly adv.相应地，因此
+- [ ] emulator n.仿真器，模拟器
+- [ ] aptly adv.适当地
+- [ ] arguably adv.可以认为，有争议地，可论证地
+- [ ] pedantic adj.学究的，迂腐的
+- [ ] aggregate v.&n.聚集，总计
+- [ ] allot v.分配
+- [ ] prone adj.易于遭受…的
+- [ ] enroll v.登记，入学，招收
+- [ ] uniqueness n.唯一性
+- [ ] convoluted adj.复杂的
+- [ ] wizard adj.出色的 n.向导，奇才
+- [ ] arguably adv.可论证地；可以认为
+- [ ] tome n.巨著
+- [ ] tradeoff n.交易，权衡，取舍
+- [ ] rudimentary adj.基本的
+- [ ] snapshot n.简介，快照
+- [ ] codebase n.代码库
+- [ ] deviation n.偏差，偏离，违背
+- [ ] tweak v.调整，微调
+- [x] inventory n.库存，财产清单
+- [ ] equivalently adv.等价地，相当于
+- [ ] intuitively adv.直观
+- [ ] quadratic adj.平方的
+- [ ] logarithmic adj.对数的
+- [ ] proportionally adv.按比例
+- [ ] deque n.双向队列
+- [ ] underlying adj.根本的，潜在的，隐含的
+- [ ] analogous adj.类似的，模拟的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] amortize v.分期偿还
+- [ ] encapsulation n.封装
+- [ ] polymorphism n.多态
+- [ ] bundle n.群，一大堆 v.扎，捆绑销售
+- [ ] deposit v.&n.存款
+- [ ] withdraw v.取款
+- [ ] defy v.违抗，蔑视，使不能
+- [ ] tamper v.&n.干扰，篡改
+- [ ] mangle v.破坏 n.识别编码
+- [ ] intricate adj.错综复杂的
+- [ ] vertex n.顶点
+- [ ] bidirectional adj.双向的
+- [ ] cyclic adj.环状的，循环的
+- [ ] acyclic adj.非周期的，非循环的
+- [ ] maze n.迷宫
+- [ ] recursion n.递归
+- [ ] matrix n.矩阵
+- [ ] consolidate v.合并，强化，加强
+- [ ] slime n.史莱姆，粘液
+- [ ] dagger n.匕首
+- [ ] fanged adj.有毒牙的，有尖牙的
+- [ ] dodge v.&n.躲避，逃避
+- [ ] shuffle v.&n.洗牌，随机播放，混合
+- [ ] sparse adj.稀少的，稀疏的
+- [ ] bidirectional n.双向的
+- [ ] overlap v.&n.交叠，重叠
+- [ ] underlying adj.根本的，潜在的，基本的
+- [ ] aggregate adj.&v.总计（的）
+- [ ] prevalence n.卓越，流行
+- [ ] proprietary n.所有权，所有物 adj.专利的，专卖的
+- [ ] hypervisor n.管理程序，虚拟层

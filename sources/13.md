@@ -1,0 +1,4 @@
+- [ ] format specifier 格式说明符，转换说明
+- [ ] malloc 分配内存
+- [ ] calloc 分配内存
+- [ ] leak v.&n.泄露

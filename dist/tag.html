@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-color-mode="light" data-light-theme="light" data-dark-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>window.icons = {"about": "M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z", "github": "M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z", "home": "M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z", "link": "m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z", "moon": "M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z", "post": "M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM3.5 6.25a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm.75 2.25h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Z", "rss": "M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.502 10.502 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7.002 7.002 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.503 5.503 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489ZM2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z", "search": "M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z", "sun": "M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z", "sync": "M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z", "tag": "M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"};</script>
+<link rel="icon" type="image/png" href="https://d111kc.github.io/assets/favicon.png">
+  <link rel="stylesheet" href="https://d111kc.github.io/assets/primer.css">
+  
+  <link rel="stylesheet" href="https://d111kc.github.io/assets/main.css">
+  <script>
+    // Resolve the stored theme before first paint, otherwise a dark-mode
+    // visitor sees a white flash. theme.js takes over once loaded.
+    (function () {
+      var theme = localStorage.getItem('internote_theme') || 'light';
+      if (theme === 'auto') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-color-mode', theme);
+    })();
+  </script>
+  <meta name="description" content="My notes on everything">
+<meta property="og:title" content="D111KC search page">
+<meta property="og:description" content="My notes on everything">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://d111kc.github.io">
+<meta property="og:image" content="https://d111kc.github.io/assets/avatar.png">
+<title>D111KC search page</title>
+</head>
+<body>
+  <header class="in-site-header" id="header">  <h1 class="in-page-title"><span>Loading</span><span class="in-animated-ellipsis"></span></h1>
+<nav class="in-site-nav" aria-label="Tag navigation">    <a class="in-nav-btn" href="https://d111kc.github.io" title="首页" aria-label="首页"><svg class="octicon " width="16" height="16" aria-hidden="true"><path d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z" fill-rule="evenodd"></path></svg></a>
+
+  <button class="in-nav-btn" id="in-theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+  <svg class="octicon" width="16" height="16"><path id="themeSwitch" d="M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z" fill-rule="evenodd"></path></svg>
+</button>
+</nav></header>
+  <main class="in-site-main" id="content">  <div class="in-tag-cloud" id="tag-cloud"></div>
+  <ul class="in-post-list" id="post-list" aria-label="Filtered posts"></ul>
+  <div class="in-timeline" id="timeline" hidden></div>
+  <div class="in-empty-state" id="empty-state" hidden>Not Find</div>
+</main>
+  <footer class="in-site-footer" id="footer"><div class="in-footer-icons" id="footer-icons" data-copied="已复制">
+  <a class="in-nav-btn in-social" href="https://d111kc.github.io/rss.xml" target="_blank" rel="noopener" title="RSS" aria-label="RSS"><svg fill="#FFA500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RSS</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+  <a class="in-nav-btn in-social" href="https://github.com/d111kc/d111kc.github.io" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg fill="#181717" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+<div class="in-footer-line" id="footer-copyright">
+  Copyright &copy; <span id="copyright-year"></span>
+  <a href="https://d111kc.github.io">D111KC</a>
+</div>
+<div class="in-footer-powered" id="footer-powered">
+  <span id="run-days"></span>
+  <span>Powered by <a href="https://github.com/interset-wq/InterNote">InterNote</a></span>
+</div>
+<div class="in-footer-built">构建部署于 2026-10-15 22:05:35</div>
+<script>
+  (function () {
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+  })();
+</script></footer>
+  <script src="https://d111kc.github.io/plugins/theme.js"></script>
+  <script id="internote-search" src="https://d111kc.github.io/plugins/search.js"
+    data-index-url="https://d111kc.github.io/search-index.json"
+    data-placeholder="搜索"
+    data-no-results="未找到结果"></script>
+  <script>
+    (function () {
+      var pageTitle = "D111KC";
+      var list = document.getElementById('post-list');
+      var cloud = document.getElementById('tag-cloud');
+      var emptyState = document.getElementById('empty-state');
+      var heading = document.querySelector('.in-page-title');
+      var timeline = document.getElementById('timeline');
+      var knownLabels = [];
+      var labelCounts = {};
+      // "%d" placeholder swapped for the sub-post count at render time
+      var SERIES_PARTS = "\u7cfb\u5217 \u00b7 %d \u7bc7";
+
+      // `时间轴` is a pseudo-tag: selecting it hides the card flow and
+      // shows the month-grouped timeline instead of filtering rows.
+      var TIMELINE_LABEL = '时间轴';
+
+      function rows() {
+        return list.querySelectorAll('.in-post-card');
+      }
+
+      // EXACTLY the chip the tag cloud renders: button.in-tag-cloud-item
+      // with a colour dot, the label text and (labels only) the global
+      // post count - same DOM, same classes, same CSS. onClick lets a
+      // card chip filter in place instead of following the card link.
+      function badge(text, color, count, onClick) {
+        var button = document.createElement('button');
+        button.className = 'in-tag-cloud-item';
+        button.type = 'button';
+        button.dataset.label = text;
+        var dot = document.createElement('span');
+        dot.className = 'in-tag-cloud-dot';
+        dot.style.backgroundColor = color || '#6e7781';
+        button.appendChild(dot);
+        button.appendChild(document.createTextNode(text));
+        if (count !== undefined) {
+          var num = document.createElement('span');
+          num.className = 'in-tag-cloud-count';
+          num.textContent = count;
+          button.appendChild(num);
+        }
+        if (onClick) {
+          button.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            onClick();
+          });
+        }
+        return button;
+      }
+
+      function postIcon() {
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('class', 'octicon');
+        svg.setAttribute('width', '16');
+        svg.setAttribute('height', '16');
+        var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', window.icons.post);
+        svg.appendChild(path);
+        return svg;
+      }
+
+      function countLabels(data) {
+        var counts = { All: 0 };
+        data.posts.forEach(function (item) {
+          counts.All += 1;
+          item.labels.forEach(function (label) {
+            counts[label] = (counts[label] || 0) + 1;
+          });
+        });
+        counts[TIMELINE_LABEL] = counts.All;
+        return counts;
+      }
+
+      function renderCloud(data, counts) {
+        var colors = data.label_colors;
+        Object.keys(counts)
+          .sort(function (a, b) {
+            return counts[b] - counts[a];
+          })
+          .forEach(function (label) {
+            var button = document.createElement('button');
+            button.className = 'in-tag-cloud-item';
+            button.type = 'button';
+            button.dataset.label = label;
+
+            // Neutral chip + colour dot: label colours stay visible without
+            // making the cloud a wall of saturated backgrounds. The timeline
+            // pseudo-tag uses an accent dot instead of a label colour.
+            var dotColor = null;
+            if (label === TIMELINE_LABEL) {
+              dotColor = 'var(--in-color-accent)';
+            } else if (label !== 'All') {
+              dotColor = colors[label] || 'var(--in-color-muted)';
+            }
+            if (dotColor) {
+              var dot = document.createElement('span');
+              dot.className = 'in-tag-cloud-dot';
+              dot.style.backgroundColor = dotColor;
+              button.appendChild(dot);
+            }
+            button.appendChild(document.createTextNode(label));
+
+            var count = document.createElement('span');
+            count.className = 'in-tag-cloud-count';
+            count.textContent = counts[label];
+            button.appendChild(count);
+
+            button.onclick = function () {
+              showLabel(label);
+            };
+            knownLabels.push(label);
+            cloud.appendChild(button);
+          });
+      }
+
+      function renderRows(data) {
+        data.posts.forEach(function (item) {
+          var row = document.createElement('li');
+          row.className = 'in-post-card';
+          row.dataset.labels = item.labels.join(' ');
+
+          var link = document.createElement('a');
+          link.className = 'in-post-card-link';
+          link.href = item.url;
+
+          var title = document.createElement('div');
+          title.className = 'in-post-card-title';
+          title.appendChild(postIcon());
+          var label = document.createElement('span');
+          label.textContent = item.title;
+          title.appendChild(label);
+
+          var meta = document.createElement('div');
+          meta.className = 'in-post-card-meta';
+          var labelsBox = document.createElement('span');
+          labelsBox.className = 'in-post-card-labels';
+          item.labels.forEach(function (name) {
+            labelsBox.appendChild(badge(name, data.label_colors[name], labelCounts[name] || 0, function () {
+              showLabel(name);
+            }));
+          });
+          meta.appendChild(labelsBox);
+          if (item.subs) {
+            // Series badge, same as the index card: sub posts stay out of
+            // the index, the row only signals the series has more parts.
+            meta.appendChild(badge(SERIES_PARTS.replace('%d', item.subs), '#8250df'));
+          }
+          var date = document.createElement('span');
+          date.className = 'in-post-card-date';
+          date.textContent = item.date;
+          meta.appendChild(date);
+
+          link.appendChild(title);
+          link.appendChild(meta);
+          row.appendChild(link);
+          list.appendChild(row);
+        });
+      }
+
+      function renderTimeline(data) {
+        // Group posts by YYYY-MM; the index arrives date-descending, so
+        // groups come out newest-first and stay ordered inside.
+        var groups = {};
+        var order = [];
+        data.posts.forEach(function (item) {
+          var month = (item.date || '').slice(0, 7);
+          if (!groups[month]) {
+            groups[month] = [];
+            order.push(month);
+          }
+          groups[month].push(item);
+        });
+
+        order.forEach(function (month) {
+          var group = document.createElement('section');
+          group.className = 'in-timeline-group';
+          group.dataset.labels = groups[month]
+            .map(function (item) { return item.labels.join(' '); })
+            .join(' ');
+
+          var title = document.createElement('h2');
+          title.className = 'in-timeline-month';
+          title.textContent = month.replace('-', ' 年 ') + ' 月';
+          group.appendChild(title);
+
+          groups[month].forEach(function (item) {
+            var entry = document.createElement('a');
+            entry.className = 'in-timeline-entry';
+            entry.href = item.url;
+
+            var day = document.createElement('span');
+            day.className = 'in-timeline-day';
+            day.textContent = item.date.slice(8) || '?';
+
+            var body = document.createElement('span');
+            body.className = 'in-timeline-body';
+
+            var title = document.createElement('span');
+            title.className = 'in-timeline-title';
+            title.textContent = item.title;
+            body.appendChild(title);
+
+            // no label chips here: the timeline stays a pure date rail,
+            // tags live on the cards and in the cloud
+            entry.appendChild(day);
+            entry.appendChild(body);
+            group.appendChild(entry);
+          });
+
+          timeline.appendChild(group);
+        });
+      }
+
+      function setVisible(row, visible) {
+        row.hidden = !visible;
+      }
+
+      function setHeading(text, title) {
+        heading.textContent = text;
+        document.title = title;
+      }
+
+      function showLabel(label) {
+        if (window.location.hash.slice(1) === encodeURI(label)) {
+          return;
+        }
+        window.location.hash = '#' + label;
+        filter(label);
+      }
+
+      function showEmpty(message) {
+        rows().forEach(function (row) {
+          setVisible(row, false);
+        });
+        var box = document.createElement('div');
+        box.className = 'in-empty-state-box';
+        // Icon built from the window.icons crop, same as post rows use.
+        var glyph = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        glyph.setAttribute('class', 'octicon');
+        glyph.setAttribute('width', '24');
+        glyph.setAttribute('height', '24');
+        glyph.setAttribute('aria-hidden', 'true');
+        var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', (window.icons || {}).tag || '');
+        glyph.appendChild(path);
+        box.appendChild(glyph);
+        box.appendChild(document.createTextNode(message));
+        emptyState.textContent = '';
+        emptyState.appendChild(box);
+        emptyState.hidden = false;
+      }
+
+      function filter(label) {
+        var all = rows();
+        var groups = timeline.querySelectorAll('.in-timeline-group');
+        emptyState.hidden = true;
+
+        // Keep the cloud's active chip in sync with the visible filter.
+        cloud.querySelectorAll('.in-tag-cloud-item').forEach(function (chip) {
+          chip.classList.toggle('is-active', chip.dataset.label === label);
+        });
+
+        if (label === 'All') {
+          all.forEach(function (row) {
+            setVisible(row, true);
+          });
+          timeline.hidden = true;
+          setHeading('Tag #' + label, label + ' - ' + pageTitle);
+          return;
+        }
+
+        if (label === TIMELINE_LABEL) {
+          // The pseudo-tag swaps the listing style instead of filtering:
+          // card flow hidden, timeline rail shown, everything visible.
+          all.forEach(function (row) {
+            setVisible(row, false);
+          });
+          timeline.hidden = false;
+          groups.forEach(function (group) {
+            setVisible(group, true);
+          });
+          setHeading('Timeline', 'Timeline - ' + pageTitle);
+          return;
+        }
+
+        timeline.hidden = true;
+
+        if (knownLabels.indexOf(label) === -1) {
+          // An unrecognised hash is free text rather than a tag.
+          // No inline form: free text is the modal's job now.
+          setHeading('#' + label, label + ' - ' + pageTitle);
+          showEmpty('Not Find "' + label + '"');
+          return;
+        }
+
+        var timelineEmpty = true;
+        groups.forEach(function (group) {
+          var match = group.dataset.labels.split(' ').indexOf(label) !== -1;
+          setVisible(group, match);
+          if (match) {
+            timelineEmpty = false;
+          }
+        });
+        if (timelineEmpty) {
+          // The timeline has no matching group at all: fall back to the
+          // shared empty state so the same message serves both views.
+          showEmpty('Not Find "' + label + '"');
+        }
+        all.forEach(function (row) {
+          setVisible(row, row.dataset.labels.split(' ').indexOf(label) !== -1);
+        });
+        setHeading('Tag #' + label, label + ' - ' + pageTitle);
+      }
+
+      var request = new XMLHttpRequest();
+      request.open('GET', 'search-index.json');
+      request.responseType = 'text';
+      request.onload = function () {
+        var data = JSON.parse(request.response);
+        var counts = countLabels(data);
+        Object.keys(counts).forEach(function (name) {
+          labelCounts[name] = counts[name];
+        });
+        renderCloud(data, counts);
+        renderRows(data);
+        renderTimeline(data);
+        filter(decodeURI(window.location.hash.slice(1)) || 'All');
+      };
+      request.send();
+    })();
+  </script>
+</body>
+</html>

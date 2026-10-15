@@ -1,0 +1,9 @@
+- [ ] specification n.规范
+- [ ] endorse n.支持，背书
+- [ ] conformance n.遵从
+- [ ] manifest n.清单
+- [ ] spine n.书脊
+- [ ] exempt v.免除
+- [ ] fallback n.回退，退路
+- [ ] revision n.修订，复习
+- [ ] typography

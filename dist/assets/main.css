@@ -1,0 +1,1615 @@
+/* ===== Design Tokens ===== */
+:root {
+  --in-max-width: 900px;
+  --in-padding: 45px;
+  --in-radius: 6px;
+  --in-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --in-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  --in-color-text: var(--color-fg-default, #1f2328);
+  --in-color-bg: var(--color-canvas-default, #ffffff);
+  --in-color-border: var(--borderColor-muted, #d0d7de);
+  --in-color-accent: var(--color-accent-fg, #0969da);
+  --in-color-muted: var(--color-fg-muted, #656d76);
+  --in-color-subtle: var(--color-canvas-subtle, #f6f8fa);
+--in-color-btn-bg:    var(--color-btn-bg, #f6f8fa);
+  --in-color-btn-hover: var(--color-btn-hover-bg, #ebeef1);
+  --in-color-accent-contrast: var(--color-canvas-default, #ffffff);
+  --in-color-on-accent-soft:   rgba(255, 255, 255, 0.28);
+
+  /* Search dialog depth, following DocSearch's stacked-shadow approach.
+     These are literal rather than aliased because there is no Primer
+     equivalent - they describe the dialog's own layering. */
+  --in-color-scrim:          rgba(101, 108, 133, 0.8);
+  --in-color-scrim-shadow:   rgba(30, 35, 90, 0.2);
+  --in-color-inset-light:    var(--color-canvas-default, #ffffff);
+  --in-color-inset-dark:     rgba(215, 219, 229, 0.5);
+  --in-color-hit-shadow:     var(--color-shadow-small, rgba(212, 217, 225, 0.8));
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  max-width: var(--in-max-width);
+  margin: 20px auto;
+  padding: var(--in-padding);
+  font-size: 16px;
+  font-family: var(--in-font-stack);
+  line-height: 1.6;
+  color: var(--in-color-text);
+  background: var(--in-color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: var(--in-color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Layout ===== */
+.in-site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  /* sticky from the first paint: cancel body's margin+padding so the
+     header starts at the viewport top instead of sticking only after
+     a dead scroll zone */
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  margin: calc(-1 * var(--in-padding, 45px) - 20px) calc(-1 * var(--in-padding, 45px)) 24px;
+  padding: 16px var(--in-padding, 45px);
+  border-bottom: 1px solid var(--in-color-border);
+  background-color: var(--in-color-canvas-default, var(--color-canvas-default, #fff));
+}
+
+/* Stuck state (index/404 only - the scroll script toggles it): the
+   text block collapses and the bar settles into one favicon + icons
+   row; transitions keep the collapse smooth instead of a sudden jump */
+.in-site-header.is-stuck {
+  flex-wrap: nowrap; /* keep the nav on row 1 while the text collapses */
+  overflow-x: clip;  /* the nav briefly overflows: clip, no scrollbar */
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.in-site-header .in-branding-name {
+  max-width: 480px;
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-width 0.3s ease, max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.in-site-header.is-stuck .in-branding-name {
+  max-width: 0;
+  max-height: 0;
+  opacity: 0;
+}
+
+.in-site-header.is-stuck .in-site-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+/* on phones the nav is a full-width second row; collapsed it must ride
+   the same row again - avatar left, icons right (space-between) */
+.in-site-header.is-stuck .in-header-nav {
+  flex-basis: auto;
+}
+
+.in-site-main { flex: 1; }
+
+.in-site-footer {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--in-color-muted);
+}
+
+/* ===== Header Components ===== */
+.in-site-branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* ===== Masthead + compact (removed styles) =====
+   The configurable header (masthead/compact) is gone; the site header
+   below is the single design: brand row + icon nav, sticky. */
+
+.in-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.in-header-nav .in-nav-btn {
+  color: var(--in-color-muted, var(--color-fg-muted, #59636e));
+  border-radius: 6px;
+}
+
+.in-header-nav .in-nav-btn:hover {
+  color: var(--in-color-accent, var(--color-accent-fg, #0969da));
+  background-color: var(--in-color-subtle, var(--color-canvas-subtle, #f6f8fa));
+}
+
+.in-site-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.8s ease, width 0.25s ease, height 0.25s ease;
+  flex-shrink: 0;
+}
+
+.in-site-avatar:hover {
+  transform: scale(1.15) rotate(360deg);
+}
+
+.in-site-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.in-branding-name {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* subtitle: stacked under the title in the header, every viewport */
+.in-site-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--in-color-muted);
+}
+
+.in-site-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.in-nav-btn {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.in-nav-btn:hover {
+  background-color: var(--in-color-subtle);
+}
+
+.in-nav-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===== Post ===== */
+
+/* Content-header titles (post/tag) are flex items in the header: a
+   long title must truncate on every viewport, not just mobile -
+   without min-width:0 the flex item would grow past the header. */
+.in-page-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== Post meta box =====
+   One bordered block between title and body: the series <details> row
+   (when the post belongs to a series) on top, then the date/label/edit
+   row. Replaces the old loose .in-post-meta chips and the separate
+   .in-series-crumb block. */
+.in-post-meta-box {
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  border: 1px solid var(--in-color-border, #d0d7de);
+  border-radius: var(--in-radius, 6px);
+  background-color: var(--in-color-bg-inset, rgba(175, 184, 143, 0.2));
+  font-size: 13px;
+  color: var(--in-color-muted, var(--color-fg-muted, #59636e));
+}
+
+/* series row closes the meta box: dates/labels above, a hairline between */
+.in-meta-series {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--in-color-border, #d0d7de);
+}
+
+/* series row: collapsed chapter list, one summary line. display:flex
+   would suppress the native disclosure marker, so the chevron is drawn
+   by hand on ::before. */
+.in-meta-series summary {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--in-color-fg, var(--color-fg-default, #1f2328));
+  cursor: pointer;
+}
+
+.in-meta-series summary svg {
+  align-self: center;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex: none;
+}
+
+.in-meta-series summary::before {
+  content: '';
+  flex: none;
+  width: 0;
+  height: 0;
+  border-left: 5px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.15s;
+}
+
+.in-meta-series[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.in-meta-series summary::after {
+  content: none;
+}
+
+.in-meta-series summary:hover {
+  color: var(--in-color-accent, var(--color-accent-fg, #0969da));
+}
+
+.in-meta-series[open] summary {
+  margin-bottom: 8px;
+}
+
+.in-meta-series ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.in-meta-series a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.in-meta-series a:hover {
+  color: var(--in-color-accent, var(--color-accent-fg, #0969da));
+}
+
+.in-meta-series-pos {
+  margin-left: auto;
+  font-weight: 400;
+}
+
+
+.in-post-meta {
+  position: relative;
+  display: block;
+}
+
+.in-post-meta-box .in-post-meta {
+  margin-bottom: 0;
+}
+
+/* one row per item: dates on their own line, labels on the next;
+   the edit pencil is pinned to the first line's right edge */
+.in-meta-date,
+.in-meta-labels {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.in-meta-date {
+  margin-bottom: 6px;
+}
+
+.in-meta-labels {
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.in-meta-date svg,
+.in-meta-labels svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex: none;
+}
+
+.in-meta-updated {
+  opacity: 0.75;
+}
+
+/* labels as coloured dot + plain link, matching the card rows */
+.in-meta-labels a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.in-meta-labels a:hover {
+  color: var(--in-color-accent, var(--color-accent-fg, #0969da));
+}
+
+.in-meta-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+/* pencil link to the source issue: content is edited on GitHub */
+.in-post-edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  color: var(--in-color-muted, var(--color-fg-muted, #59636e));
+  text-decoration: none;
+}
+
+.in-post-edit:hover {
+  color: var(--in-color-accent, var(--color-accent-fg, #0969da));
+  text-decoration: none;
+}
+
+.in-post-edit svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Label/series chips in card rows are EXACTLY the tag-cloud chip
+   (button.in-tag-cloud-item + .in-tag-cloud-dot + .in-tag-cloud-count);
+   its styles live in the Tag Cloud section - nothing badge-specific. */
+
+.in-post-body {
+  border-bottom: 1px solid var(--in-color-border);
+  padding-bottom: 36px;
+}
+
+/* Task lists (not included in the Primer bundle) */
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .task-list-item + .task-list-item {
+  margin-top: 0.25rem;
+}
+
+.in-post-footer-text {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: right;
+  color: var(--in-color-muted);
+}
+
+/* ===== Comments ===== */
+.in-comments-section { margin-top: 48px; }
+
+.in-comments-container { margin-top: 16px; }
+
+/* ===== Post List (card flow) ===== */
+/* Cards float free instead of living in one bordered box: the list is a
+   flex column, each post its own surface. tag.html renders the same
+   structure from JS, so these classes are shared. */
+.in-post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Links inside the client-rendered cards: no global anchor styling. */
+.in-post-list a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+}
+
+.in-post-card {
+  margin: 0;
+}
+
+.in-post-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 20px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background: var(--in-color-canvas-default, var(--color-canvas-default, #fff));
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.in-post-card-link:hover {
+  border-color: var(--in-color-accent);
+  box-shadow: var(--color-primer-shadow-inset, 0 1px 0 rgba(31, 35, 40, 0.04));
+  transform: translateY(-1px);
+}
+
+.in-post-card-link:hover .in-post-card-title span {
+  color: var(--in-color-accent);
+}
+
+.in-post-card-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.in-post-card-title span {
+  word-break: break-word;
+}
+
+.in-post-card-title svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--in-color-muted);
+}
+
+.in-post-icon-top {
+  color: var(--color-danger-fg, #cf222e);
+}
+
+.in-post-card-desc {
+  margin: 0;
+  color: var(--in-color-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.in-post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.in-post-card-labels {
+  display: inline-flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.in-post-card-date {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--in-color-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* card rows reuse the cloud chip but smaller: a post with many labels
+   must not blow the card up when they wrap */
+.in-post-card .in-tag-cloud-item {
+  padding: 1px 8px;
+  font-size: 12px;
+}
+
+/* ===== Pagination ===== */
+.in-pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.in-pagination .in-page-btn {
+  padding: 6px 16px;
+  border: 1px solid var(--in-color-border);
+  /* a small fixed radius, not a full pill: a pill goes circular the
+     moment the label collapses (font load, narrow squeeze) and width
+     approaches height */
+  border-radius: var(--in-radius, 6px);
+  background: var(--in-color-canvas-default, var(--color-canvas-default, #fff));
+  color: var(--in-color-accent);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.in-pagination .in-page-btn:hover:not(:disabled) {
+  background-color: var(--in-color-subtle);
+  border-color: var(--in-color-accent);
+}
+
+.in-pagination .in-page-btn:disabled {
+  color: var(--in-color-muted);
+  border-color: var(--in-color-border);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.in-pagination .in-page-status {
+  padding: 0 4px;
+  color: var(--in-color-muted);
+  font-size: 13px;
+  min-width: 48px;
+  text-align: center;
+}
+
+/* ===== Tag Page ===== */
+.in-page-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.in-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* ===== Links page =====
+   Friend-link cards from the blog repo's optional links.toml; the
+   grid collapses to one column on phones on its own. */
+.in-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.in-links-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-subtle);
+  min-width: 0;
+}
+
+.in-links-card:hover {
+  border-color: var(--in-color-accent);
+}
+
+.in-links-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.in-links-info {
+  min-width: 0;
+}
+
+.in-links-name {
+  margin: 0;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.in-links-description {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--in-color-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== Links page: application form =====
+   Generates the links.toml entry live; the applicant copies it into
+   the giscus comment below (pathname mapping = own thread). */
+.in-links-apply {
+  margin-top: 40px;
+}
+
+.in-links-apply-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.in-links-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+}
+
+.in-links-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--in-color-muted);
+}
+
+.in-links-field input {
+  font: inherit;
+  color: var(--in-color-text);
+  padding: 8px 10px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-bg);
+}
+
+.in-links-field input:focus {
+  outline: none;
+  border-color: var(--in-color-accent);
+}
+
+.in-links-toml {
+  position: relative;
+  margin-top: 16px;
+}
+
+.in-links-toml pre {
+  margin: 0;
+  padding: 12px;
+  overflow-x: auto;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-subtle);
+  font-family: var(--in-font-mono);
+  font-size: 13px;
+}
+
+.in-links-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--in-color-text);
+  padding: 4px 10px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-btn-bg);
+  cursor: pointer;
+}
+
+.in-links-copy:hover:not(:disabled) {
+  background-color: var(--in-color-btn-hover);
+}
+
+.in-links-copy:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.in-links-apply-hint {
+  margin: 12px 0 24px;
+  font-size: 13px;
+  color: var(--in-color-muted);
+}
+
+@media (max-width: 600px) {
+  .in-links-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Neutral chip + colour dot instead of saturated label backgrounds: the
+   cloud reads as a toolbar, and the active filter gets an accent ring. */
+.in-tag-cloud-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border: 1px solid var(--in-color-border);
+  border-radius: 999px;
+  background: var(--in-color-canvas-subtle, var(--color-canvas-subtle, #f6f8fa));
+  color: var(--in-color-fg);
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.in-tag-cloud-item:hover {
+  border-color: var(--in-color-accent);
+}
+
+.in-tag-cloud-item.is-active {
+  border-color: var(--in-color-accent);
+  color: var(--in-color-accent);
+  font-weight: 600;
+}
+
+.in-tag-cloud-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.in-tag-cloud-count {
+  color: var(--in-color-muted);
+  font-size: 12px;
+}
+
+.in-tag-cloud-item.is-active .in-tag-cloud-count {
+  color: var(--in-color-accent);
+}
+
+.in-empty-state {
+  margin: 16px 0;
+  color: var(--in-color-muted);
+}
+
+/* Centered icon + message instead of a bare text line. */
+.in-empty-state-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 48px 16px;
+  border: 1px dashed var(--in-color-border);
+  border-radius: var(--in-radius);
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ===== Tag Page: view switch ===== */
+/* Segmented control picking between the card flow and the timeline. */
+.in-view-switch {
+  display: inline-flex;
+  margin-bottom: 12px;
+  border: 1px solid var(--in-color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.in-view-switch-btn {
+  padding: 4px 14px;
+  border: none;
+  background: transparent;
+  color: var(--in-color-muted);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.in-view-switch-btn.is-active {
+  background: var(--in-color-accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== Tag Page: timeline view ===== */
+/* One vertical rail; month headers break it, entries hang off it. */
+.in-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.in-timeline-group {
+  border-left: 2px solid var(--in-color-border);
+  padding-left: 20px;
+}
+
+.in-timeline-month {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--in-color-fg);
+}
+
+.in-timeline-entry {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 0 5px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* The dot sits on the rail; hover turns it accent. */
+.in-timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--in-color-border);
+  transition: background-color 0.15s;
+}
+
+.in-timeline-entry:hover::before {
+  background: var(--in-color-accent);
+}
+
+.in-timeline-entry:hover .in-timeline-title {
+  color: var(--in-color-accent);
+}
+
+.in-timeline-day {
+  flex-shrink: 0;
+  min-width: 20px;
+  color: var(--in-color-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.in-timeline-body {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.in-timeline-title {
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* ===== Search Dialog =====
+   Styled after Algolia DocSearch v5's visual language - the dimmed scrim,
+   the recessed modal, card-like hit rows with a soft drop shadow, the
+   keyboard-hint footer - so the dialog reads the way a doc site does.
+
+   Deliberately not @docsearch/css: that package is only licensed for
+   eligible documentation sites and would add a bundled dependency to a
+   project that ships zero of them. Colours come from the --in-* tokens
+   rather than DocSearch's own --docsearch-* set, which keeps dark mode
+   automatic and stays inside the project palette.
+
+   Mapping: --docsearch-primary-color -> --in-color-accent,
+   --docsearch-muted-color -> --in-color-muted,
+   --docsearch-modal-background -> --in-color-subtle,
+   --docsearch-hit-background -> --in-color-bg.
+   Skipped: the breadcrumb. DocSearch assumes a lvl0..lvl6 heading tree;
+   records here are one per post with no hierarchy to show.
+*/
+
+/* Separate from .in-search-input above, which sizes the tag page form. */
+.in-search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12vh 16px 16px;
+  background-color: var(--in-color-scrim);
+  overflow-y: auto;
+}
+
+.in-search-panel {
+  width: 100%;
+  max-width: 560px;
+  max-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--in-color-subtle);
+  border-radius: 8px;
+  /* DocSearch layers an inner highlight over the outer drop shadow, which is
+     what gives the modal its recessed-then-lifted look. */
+  box-shadow:
+    inset 0 2px 0 0 var(--in-color-inset-light),
+    0 16px 32px 0 var(--in-color-scrim-shadow);
+  overflow: hidden;
+}
+
+.in-search-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 12px 0;
+  padding: 0 12px;
+  height: 44px;
+  background-color: var(--in-color-bg);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 2px 0 var(--in-color-inset-dark);
+}
+
+.in-search-modal-input {
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--in-color-text);
+  font-size: 16px;
+  outline: none;
+}
+
+/* The magnifier drawn into the input's left edge, matching DocSearch's. */
+/* The magnifier is injected by search.js from window.icons.search, the same
+   way tag.j2.html builds its post glyph, so it is the Octicons path rather
+   than a hand-drawn ring. */
+.in-search-head-icon {
+  flex: none;
+  color: var(--in-color-muted);
+}
+
+.in-search-results {
+  flex: 1;
+  margin: 0;
+  padding: 0 12px 12px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.in-search-hit {
+  margin-top: 8px;
+  border-radius: 8px;
+  background-color: var(--in-color-bg);
+  box-shadow: 0 1px 3px 0 var(--in-color-hit-shadow);
+}
+
+.in-search-hit-link {
+  display: block;
+  padding: 12px 16px;
+  color: inherit;
+  text-decoration: none;
+  /* DocSearch inverts the active row to the primary colour. */
+  border-radius: 8px;
+}
+
+.in-search-hit.is-active {
+  background-color: var(--in-color-accent);
+  box-shadow: none;
+}
+
+.in-search-hit.is-active .in-search-hit-link,
+.in-search-hit.is-active .in-search-hit-snippet {
+  color: var(--in-color-accent-contrast);
+}
+
+/* The active row is solid accent, so a label pill painted with the normal
+   surface token would be white-on-white and vanish. Needs its own
+   translucent-on-accent treatment. */
+.in-search-hit.is-active .in-search-hit-label {
+  color: var(--in-color-accent-contrast);
+  background-color: var(--in-color-on-accent-soft);
+}
+
+.in-search-hit.is-active .in-search-hit-mark {
+  color: inherit;
+}
+
+.in-search-hit-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.in-search-hit-labels {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.in-search-hit-label {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background-color: var(--in-color-btn-bg);
+  color: var(--in-color-muted);
+}
+
+.in-search-hit-snippet {
+  display: block;
+  font-size: 13px;
+  color: var(--in-color-muted);
+}
+
+.in-search-hit-mark {
+  background-color: transparent;
+  color: var(--in-color-text);
+  font-weight: 700;
+}
+
+.in-search-empty {
+  margin-top: 8px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  background-color: var(--in-color-bg);
+  box-shadow: 0 1px 3px 0 var(--in-color-hit-shadow);
+  text-align: center;
+  color: var(--in-color-muted);
+  font-size: 14px;
+}
+
+.in-search-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex: none;
+  height: 44px;
+  padding: 0 16px;
+  background-color: var(--in-color-bg);
+  box-shadow: inset 0 1px 0 0 var(--in-color-border);
+  color: var(--in-color-muted);
+  font-size: 12px;
+}
+
+.in-search-credit {
+  color: var(--in-color-muted);
+  text-decoration: none;
+}
+
+.in-search-credit:hover {
+  color: var(--in-color-accent);
+  text-decoration: underline;
+}
+
+.in-search-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-top: 1px solid var(--in-color-border);
+  color: var(--in-color-muted);
+  font-size: 12px;
+}
+
+.in-search-credit {
+  color: var(--in-color-muted);
+  text-decoration: none;
+}
+
+.in-search-credit:hover {
+  color: var(--in-color-accent);
+  text-decoration: underline;
+}
+
+/* Stop the page behind the overlay from scrolling with it. */
+.in-search-open-page {
+  overflow: hidden;
+}
+
+/* ===== Footer ===== */
+.in-footer-icons {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* [[social]] brand glyphs are inline Simple Icons SVGs (24x24 viewBox,
+   brand fill); size them to match the octicon buttons around them. */
+.in-social svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Simple Icons' GitHub glyph is brand-black (#181717): invisible on the
+   dark footer. Lighten it in dark mode; every other brand icon keeps
+   its own colour. */
+[data-color-mode="dark"] .in-social svg[fill="#181717"] {
+  fill: var(--color-fg-default, #f0f6fc);
+}
+
+.in-social-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  z-index: 120;
+  padding: 6px 14px;
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-text);
+  color: var(--in-color-bg);
+  font-size: 13px;
+}
+
+.in-social-toast[hidden] { display: none; }
+
+.in-social-qr {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: zoom-out;
+}
+
+.in-social-qr[hidden] { display: none; }
+
+.in-social-qr img {
+  max-width: min(320px, 80vw);
+  max-height: 80vh;
+  padding: 8px;
+  border-radius: var(--in-radius);
+  background: #fff;
+}
+
+.in-footer-line { margin-bottom: 8px; }
+
+.in-footer-powered {
+  line-height: 1.8;
+}
+
+/* timestamp of the build that produced this artifact */
+.in-footer-built {
+  color: var(--in-color-muted, var(--color-fg-muted, #59636e));
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ===== Series (sub posts) ===== */
+/* The top series copy lives in .in-post-meta-box (post.j2.html); what
+   remains here is the bottom listing and the pager. */
+.in-series-list {
+  margin-top: 32px;
+  padding: 12px 16px;
+  border: 1px solid var(--in-color-border, #d0d7de);
+  border-radius: var(--in-radius, 6px);
+}
+
+/* series listings are <details> elements: the top copy starts collapsed,
+   the bottom copy starts open (post.j2.html) */
+.in-series-list summary {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  /* GitHub-style blue marker */
+  list-style: revert;
+}
+
+.in-series-list summary:hover {
+  color: var(--in-color-accent, #0969da);
+}
+
+.in-series-list[open] summary {
+  margin-bottom: 8px;
+}
+
+.in-series-list ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.in-series-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.in-series-pager a {
+  display: block;
+  max-width: 48%;
+  padding: 8px 12px;
+  border: 1px solid var(--in-color-border, #d0d7de);
+  border-radius: var(--in-radius, 6px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.in-series-next { margin-left: auto; text-align: right; }
+
+/* ===== Code Copy Button ===== */
+/* Language label on highlighted code blocks, top-right corner, left of
+   the copy button. code-copy.js injects <span class="in-code-lang">
+   into the .in-code-block wrapper (which is position:relative) from
+   the highlight-(source|text)- language wrapper class. */
+.in-code-lang {
+  position: absolute;
+  top: 8px;
+  right: 48px;
+  z-index: 2;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-family: var(--in-font-mono, ui-monospace, monospace);
+  color: var(--in-color-muted, #59636e);
+  background-color: var(--in-color-bg-inset, rgba(175, 184, 143, 0.2));
+  border-radius: 6px;
+  pointer-events: none;
+  user-select: none;
+  /* quiet by default, surfacing when the block is hovered */
+  opacity: 0.45;
+  transition: opacity 0.15s;
+}
+.in-copy-feedback {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  z-index: 3;
+  color: #fff;
+  background-color: var(--in-color-muted);
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.in-code-block {
+  position: relative;
+  overflow: auto;
+  /* visual layering: lift the block off the prose */
+  border: 1px solid var(--in-color-border);
+  border-radius: 8px;
+  transition: box-shadow 0.15s;
+  /* overflow makes this a BFC: the markdown-body pre's 16px bottom
+     margin would end up INSIDE the border - an empty strip under the
+     code. Zero the pre's margins and keep the rhythm on the wrapper. */
+  margin-bottom: 16px;
+}
+
+.in-code-block pre {
+  margin: 0;
+}
+
+.in-code-block:hover {
+  box-shadow: 0 1px 3px rgba(31, 35, 40, 0.08);
+}
+
+.in-code-block:hover .in-code-lang,
+.in-code-block:hover .clipboard-container {
+  opacity: 1;
+}
+
+/* the copy button shares the quiet-until-hover treatment */
+.in-code-block .clipboard-container {
+  transition: opacity 0.15s;
+  opacity: 0.45;
+}
+
+/* ===== Table of Contents ===== */
+.in-toc {
+  position: fixed;
+  top: 130px;
+  left: calc(50% + var(--in-max-width) / 2 + 24px);
+  width: 220px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-bg);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.in-toc-title {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--in-color-border);
+}
+
+.in-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.in-toc-list .in-toc-list {
+  padding-left: 12px;
+}
+
+.in-toc-link {
+  display: block;
+  padding: 4px 6px;
+  border-left: 2px solid transparent;
+  color: var(--in-color-muted);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.in-toc-link:hover {
+  background-color: var(--in-color-subtle);
+  color: var(--in-color-text);
+  text-decoration: none;
+}
+
+.in-toc-link.is-active {
+  border-left-color: var(--in-color-accent);
+  color: var(--in-color-accent);
+  font-weight: 600;
+}
+
+.in-toc-top {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px;
+  font: inherit;
+  color: var(--in-color-muted);
+  background: none;
+  border: none;
+  border-top: 1px solid var(--in-color-border);
+  cursor: pointer;
+}
+
+.in-toc-top:hover {
+  color: var(--in-color-accent);
+}
+
+@media (max-width: 1249px) {
+  .in-toc {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-height: none;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
+}
+
+/* ===== Floating action buttons (post pages) ===== */
+/* Bottom-right tool stack: TOC overlay toggle + scroll up/down. Only
+   exists below 1250px, where the sidebar TOC collapses to the top of the
+   article and cannot help while reading. */
+.in-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Desktop has the sidebar TOC; no floating stack there. */
+@media (min-width: 1250px) {
+  .in-fab { display: none; }
+}
+
+.in-fab[hidden] { display: none; }
+
+.in-fab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--in-color-border);
+  border-radius: 50%;
+  background-color: var(--in-color-bg);
+  color: var(--in-color-muted);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, opacity 0.2s;
+}
+
+/* out-of-range buttons are disabled, not hidden: the stack never
+   reflows, the disabled button just goes faint (native disabled also
+   blocks clicks and announces state to assistive tech) */
+.in-fab-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.in-fab-btn:hover {
+  color: var(--in-color-accent);
+  border-color: var(--in-color-accent);
+}
+
+.in-fab-btn:active {
+  transform: scale(0.95);
+}
+
+/* TOC overlay: the panel #in-toc is moved here by fab.js and floats over
+   the article near the button stack. */
+.in-fab-toc-overlay {
+  position: fixed;
+  right: 16px;
+  bottom: 160px;
+  z-index: 89;
+  max-width: min(320px, calc(100vw - 32px));
+  max-height: 65vh;
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid var(--in-color-border);
+  border-radius: var(--in-radius);
+  background-color: var(--in-color-bg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.in-fab-toc-overlay[hidden] { display: none; }
+
+/* Inside the overlay the panel is no longer the static top-of-article
+   block from the <=1249px rule above. */
+.in-fab-toc-overlay .in-toc {
+  position: static;
+  width: auto;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* ===== Lightbox ===== */
+.in-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgba(27, 31, 36, 0.7);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.in-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.in-lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.in-lightbox-nav,
+.in-lightbox-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 26px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.in-lightbox-nav:hover {
+  transform: scale(1.1);
+}
+
+.in-lightbox-nav[hidden] {
+  display: none;
+}
+
+.in-lightbox-prev {
+  left: 16px;
+  top: 50%;
+  margin-top: -22px;
+}
+
+.in-lightbox-next {
+  right: 16px;
+  top: 50%;
+  margin-top: -22px;
+}
+
+.in-lightbox-close {
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .in-lightbox-nav,
+  .in-lightbox-close {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .in-lightbox-prev { left: 6px; }
+  .in-lightbox-next { right: 6px; }
+}
+
+/* ===== Utilities ===== */
+.in-animated-ellipsis::after {
+  content: '...';
+  animation: in-ellipsis 1.5s steps(4, end) infinite;
+}
+
+@keyframes in-ellipsis {
+  0% { content: ''; }
+  25% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  :root { --in-padding: 16px; }
+
+  body { margin: 10px auto; }
+
+  .in-search-overlay { padding: 0; }
+  .in-search-panel { max-height: 100vh; border-radius: 0; border: none; }
+
+  /* `.in-page-title` (the tag page filter heading, e.g. "Tag #blog") is
+     NOT hidden on mobile: it is the only place that shows the active
+     filter, so hiding it would make tag.html look unresponsive. */
+  /* The site name stays on mobile - only the heading above it goes. It has to
+     shrink, since avatar + title + a four-icon nav will not fit one row on a
+     375px screen; the header wraps the nav when it cannot. */
+  .in-site-title { font-size: 20px; }
+  .in-site-avatar { width: 40px; height: 40px; }
+
+  /* the site header wraps into TWO rows on phones: brand row on top
+     (subtitle stays visible under the title), icon nav centered below
+     with roomier gaps */
+  .in-site-header { flex-wrap: wrap; }
+  /* content headers (post/tag) must NOT wrap: the single-row title
+     truncates instead of pushing the nav to a second line */
+  .in-site-header:has(.in-page-title) { flex-wrap: nowrap; }
+  .in-header-nav {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Rows are already title-over-badges; just let the chips wrap. */
+  .in-post-card-meta { flex-wrap: wrap; }
+
+  .in-post-card-link { padding: 12px 14px; }
+}

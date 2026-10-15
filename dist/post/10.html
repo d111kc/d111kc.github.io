@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-color-mode="light" data-light-theme="light" data-dark-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>window.icons = {"arrow-down": "M13.03 8.22a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L5.47 9.28a.75.75 0 1 1 1.06-1.06l1.97 1.97V2.75a.75.75 0 0 1 1.5 0v7.44l1.97-1.97a.75.75 0 0 1 1.06 0Z", "arrow-up": "M3.47 7.78a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 1 1-1.06 1.06L8.75 5.811v7.439a.75.75 0 0 1-1.5 0V5.81L4.53 7.78a.75.75 0 0 1-1.06 0Z", "bars": "M1.75 2.5a.75.75 0 0 1 0-1.5h12.5a.75.75 0 0 1 0 1.5H1.75Zm0 3.75a.75.75 0 0 1 0-1.5h12.5a.75.75 0 0 1 0 1.5H1.75Zm0 3.75a.75.75 0 0 1 0-1.5h12.5a.75.75 0 0 1 0 1.5H1.75Zm0 3.75a.75.75 0 0 1 0-1.5h12.5a.75.75 0 0 1 0 1.5H1.75Z", "book": "M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z", "calendar": "M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z", "github": "M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z", "home": "M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z", "moon": "M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z", "pencil": "M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354l-1.086-1.086Z", "post": "M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25Zm1.75-.25a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM3.5 6.25a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75Zm.75 2.25h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Z", "rss": "M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.502 10.502 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7.002 7.002 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.503 5.503 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489ZM2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z", "search": "M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z", "sun": "M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z", "sync": "M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z", "tag": "M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"};</script>
+<link rel="icon" type="image/png" href="https://d111kc.github.io/assets/favicon.png">
+  <link rel="stylesheet" href="https://d111kc.github.io/assets/primer.css">
+  
+  <link rel="stylesheet" href="https://d111kc.github.io/assets/main.css">
+  <script>
+    // Resolve the stored theme before first paint, otherwise a dark-mode
+    // visitor sees a white flash. theme.js takes over once loaded.
+    (function () {
+      var theme = localStorage.getItem('internote_theme') || 'light';
+      if (theme === 'auto') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-color-mode', theme);
+    })();
+  </script>
+  <meta name="description" content="- [ ] derive v衍生，派生
+- [ ] detach v.脱离，拆卸，派遣
+- [ ] dispatch n.&v.派遣，调度
+- [ ] deamon n.守护进程，虚拟光驱
+- [ ] credential n.凭证 adj.信任的
+- [ ] gradient
+- [ ] hibernation n.冬眠，休眠
+- [ ] compatibility n.兼容，并存
+- [ ] perception n.感知
+- [ ] primary colors 原色，黄蓝红
+- [ ] secondary colors 间色，两种原色等量混合得到
+- [ ] tertiary colors 复色，原色和间色混合得到
+- [ ] hue n.色调，颜色
+- [ ] derive v.由来
+- [ ] coziness n.舒适，安逸
+- [ ] evoke v.唤起
+- [ ] serenity n.宁静
+- [ ] palette n.调色板
+- [ ] scheme n.方案
+- [ ] analogous adj.类似的
+- [ ] cohesive adj.有结合力的
+- [ ] adjacent adj.邻近的
+- [ ] magenta n.品红色
+- [ ] complementary adj.互补的
+- [ ] triadic adj.三元，三色的
+- [ ] vibrant adj.充满生机的，鲜艳的
+- [ ] equidistant adj.等距离的
+- [ ] monochromatic adj.单色的
+- [ ] saturation n.饱和度
+- [ ] soothe v.安慰
+- [ ] prototype n.原型，样板
+- [ ] versatile adj.通用的
+- [ ] spectrum n.光谱
+- [ ] transform v.转换，变换，几何变换
+- [ ] overflow v.溢出
+- [ ] filter
+- [ ] rotate v.旋转
+- [ ] scale v.缩放
+- [ ] skew v.扭曲
+- [ ] translate v.平移
+- [ ] clockwise adj.顺时针方向的
+- [ ] seizure v.发作 n.癫痫
+- [ ] collapse v.坍塌，崩溃
+- [ ] flexbox n.弹性盒子
+- [ ] perpendicular adj.&n.垂直
+- [ ] wrap v.包裹，换行
+- [ ] evenly adv.均匀地
+- [ ] envision v.想象，展望
+- [ ] justify v.两端对齐
+- [ ] typography n.印刷（术），排版
+- [ ] typeface n.字体
+- [ ] serif n.衬线字体，宋体等印刷体
+- [ ] sans serif 无衬线字体，黑体等电子设备常用字体
+- [ ] oblique n.&v.倾斜
+- [ ] condense v.压缩
+- [ ] ascender n.上升笔画
+- [ ] descender n.下降物
+- [ ] kern n.字符间距
+- [ ] dense adj.密集的
+- [ ] generic adj.通用的
+- [ ] portfolio n.作品集，档案，文件夹
+- [ ] glyph n.字形
+- [ ] customize v.定制
+- [ ] simultaneous adj.同步的，同时的
+- [ ] compatibility n.兼容性，和睦相处
+- [ ] render v.渲染，提供
+- [ ] sticky adj.粘性的
+- [ ] symbiosis n.共生，合作关系
+- [ ] optimal adj.最好的，最适宜的
+- [ ] granular adj.由颗粒构成的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] traction n.牵引力，拉力
+- [ ] cornerstone n.基础
+- [ ] optimize v.充分利用，使最优化
+- [ ] outset n.开始
+- [ ] exemplify v.举例证明，示范
+- [ ] essence n.本质，精髓
+- [ ] predominantly adv.主要地
+- [ ] conceptualize v.构思，概念化
+- [ ] proportionally adv.按比例
+- [ ] employ v.使用，雇用
+- [ ] invisible adj.看不见的
+- [ ] grid n.网格
+- [ ] fractional adj.分数的，小数的，很少的
+- [ ] redundance n.冗余
+- [ ] implicit adj.含蓄的
+- [ ] explicit adj.明确的，易于理解的
+- [ ] rigid adj.死板的，严格的
+- [ ] cybersecurity n.网络安全
+- [ ] malware n.恶意软件，电脑病毒
+- [ ] compatible adj.兼容的
+- [ ] scrape v.刮，擦伤
+- [ ] abbreviation n.缩写，约分
+- [ ] duplicate v.复制
+- [ ] squash v.挤压
+- [ ] flush v.&n.强制刷新，脸红
+- [ ] curly braces 花括号
+- [x] immutable adj.不可变的
+- [ ] primitive type 基本类型
+- [ ] reference type 引用类型
+- [ ] sock n.短袜，重击
+- [ ] excerpt n.摘录，节选，片段
+- [ ] sleeve n.袖子
+- [ ] arithmetic n.算术
+- [ ] parameter n.形参
+- [ ] argument n.实参
+- [ ] inherent adj.天生的，固有的
+- [ ] compact adj.紧凑的 n.契约
+- [ ] enumerate v.枚举，列举
+- [ ] rigorous adj.严谨的，严格的，细致的
+- [ ] resume n.简历 v.继续
+- [ ] vanilla adj.普通的，寻常的
+- [ ] asynchronously adv.异步
+- [ ] mitigate v.缓解
+- [ ] accordingly adv.相应地，因此
+- [ ] emulator n.仿真器，模拟器
+- [ ] aptly adv.适当地
+- [ ] arguably adv.可以认为，有争议地，可论证地
+- [ ] pedantic adj.学究的，迂腐的
+- [ ] aggregate v.&n.聚集，总计
+- [ ] allot v.分配
+- [ ] prone adj.易于遭受…的
+- [ ] enroll v.登记，入学，招收
+- [ ] uniqueness n.唯一性
+- [ ] convoluted adj.复杂的
+- [ ] wizard adj.出色的 n.向导，奇才
+- [ ] arguably adv.可论证地；可以认为
+- [ ] tome n.巨著
+- [ ] tradeoff n.交易，权衡，取舍
+- [ ] rudimentary adj.基本的
+- [ ] snapshot n.简介，快照
+- [ ] codebase n.代码库
+- [ ] deviation n.偏差，偏离，违背
+- [ ] tweak v.调整，微调
+- [x] inventory n.库存，财产清单
+- [ ] equivalently adv.等价地，相当于
+- [ ] intuitively adv.直观
+- [ ] quadratic adj.平方的
+- [ ] logarithmic adj.对数的
+- [ ] proportionally adv.按比例
+- [ ] deque n.双向队列
+- [ ] underlying adj.根本的，潜在的，隐含的
+- [ ] analogous adj.类似的，模拟的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] amortize v.分期偿还
+- [ ] encapsulation n.封装
+- [ ] polymorphism n.多态
+- [ ] bundle n.群，一大堆 v.扎，捆绑销售
+- [ ] deposit v.&n.存款
+- [ ] withdraw v.取款
+- [ ] defy v.违抗，蔑视，使不能
+- [ ] tamper v.&n.干扰，篡改
+- [ ] mangle v.破坏 n.识别编码
+- [ ] intricate adj.错综复杂的
+- [ ] vertex n.顶点
+- [ ] bidirectional adj.双向的
+- [ ] cyclic adj.环状的，循环的
+- [ ] acyclic adj.非周期的，非循环的
+- [ ] maze n.迷宫
+- [ ] recursion n.递归
+- [ ] matrix n.矩阵
+- [ ] consolidate v.合并，强化，加强
+- [ ] slime n.史莱姆，粘液
+- [ ] dagger n.匕首
+- [ ] fanged adj.有毒牙的，有尖牙的
+- [ ] dodge v.&n.躲避，逃避
+- [ ] shuffle v.&n.洗牌，随机播放，混合
+- [ ] sparse adj.稀少的，稀疏的
+- [ ] bidirectional n.双向的
+- [ ] overlap v.&n.交叠，重叠
+- [ ] underlying adj.根本的，潜在的，基本的
+- [ ] aggregate adj.&v.总计（的）
+- [ ] prevalence n.卓越，流行
+- [ ] proprietary n.所有权，所有物 adj.专利的，专卖的
+- [ ] hypervisor n.管理程序，虚拟层。">
+<meta property="og:title" content="fcc">
+<meta property="og:description" content="- [ ] derive v衍生，派生
+- [ ] detach v.脱离，拆卸，派遣
+- [ ] dispatch n.&v.派遣，调度
+- [ ] deamon n.守护进程，虚拟光驱
+- [ ] credential n.凭证 adj.信任的
+- [ ] gradient
+- [ ] hibernation n.冬眠，休眠
+- [ ] compatibility n.兼容，并存
+- [ ] perception n.感知
+- [ ] primary colors 原色，黄蓝红
+- [ ] secondary colors 间色，两种原色等量混合得到
+- [ ] tertiary colors 复色，原色和间色混合得到
+- [ ] hue n.色调，颜色
+- [ ] derive v.由来
+- [ ] coziness n.舒适，安逸
+- [ ] evoke v.唤起
+- [ ] serenity n.宁静
+- [ ] palette n.调色板
+- [ ] scheme n.方案
+- [ ] analogous adj.类似的
+- [ ] cohesive adj.有结合力的
+- [ ] adjacent adj.邻近的
+- [ ] magenta n.品红色
+- [ ] complementary adj.互补的
+- [ ] triadic adj.三元，三色的
+- [ ] vibrant adj.充满生机的，鲜艳的
+- [ ] equidistant adj.等距离的
+- [ ] monochromatic adj.单色的
+- [ ] saturation n.饱和度
+- [ ] soothe v.安慰
+- [ ] prototype n.原型，样板
+- [ ] versatile adj.通用的
+- [ ] spectrum n.光谱
+- [ ] transform v.转换，变换，几何变换
+- [ ] overflow v.溢出
+- [ ] filter
+- [ ] rotate v.旋转
+- [ ] scale v.缩放
+- [ ] skew v.扭曲
+- [ ] translate v.平移
+- [ ] clockwise adj.顺时针方向的
+- [ ] seizure v.发作 n.癫痫
+- [ ] collapse v.坍塌，崩溃
+- [ ] flexbox n.弹性盒子
+- [ ] perpendicular adj.&n.垂直
+- [ ] wrap v.包裹，换行
+- [ ] evenly adv.均匀地
+- [ ] envision v.想象，展望
+- [ ] justify v.两端对齐
+- [ ] typography n.印刷（术），排版
+- [ ] typeface n.字体
+- [ ] serif n.衬线字体，宋体等印刷体
+- [ ] sans serif 无衬线字体，黑体等电子设备常用字体
+- [ ] oblique n.&v.倾斜
+- [ ] condense v.压缩
+- [ ] ascender n.上升笔画
+- [ ] descender n.下降物
+- [ ] kern n.字符间距
+- [ ] dense adj.密集的
+- [ ] generic adj.通用的
+- [ ] portfolio n.作品集，档案，文件夹
+- [ ] glyph n.字形
+- [ ] customize v.定制
+- [ ] simultaneous adj.同步的，同时的
+- [ ] compatibility n.兼容性，和睦相处
+- [ ] render v.渲染，提供
+- [ ] sticky adj.粘性的
+- [ ] symbiosis n.共生，合作关系
+- [ ] optimal adj.最好的，最适宜的
+- [ ] granular adj.由颗粒构成的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] traction n.牵引力，拉力
+- [ ] cornerstone n.基础
+- [ ] optimize v.充分利用，使最优化
+- [ ] outset n.开始
+- [ ] exemplify v.举例证明，示范
+- [ ] essence n.本质，精髓
+- [ ] predominantly adv.主要地
+- [ ] conceptualize v.构思，概念化
+- [ ] proportionally adv.按比例
+- [ ] employ v.使用，雇用
+- [ ] invisible adj.看不见的
+- [ ] grid n.网格
+- [ ] fractional adj.分数的，小数的，很少的
+- [ ] redundance n.冗余
+- [ ] implicit adj.含蓄的
+- [ ] explicit adj.明确的，易于理解的
+- [ ] rigid adj.死板的，严格的
+- [ ] cybersecurity n.网络安全
+- [ ] malware n.恶意软件，电脑病毒
+- [ ] compatible adj.兼容的
+- [ ] scrape v.刮，擦伤
+- [ ] abbreviation n.缩写，约分
+- [ ] duplicate v.复制
+- [ ] squash v.挤压
+- [ ] flush v.&n.强制刷新，脸红
+- [ ] curly braces 花括号
+- [x] immutable adj.不可变的
+- [ ] primitive type 基本类型
+- [ ] reference type 引用类型
+- [ ] sock n.短袜，重击
+- [ ] excerpt n.摘录，节选，片段
+- [ ] sleeve n.袖子
+- [ ] arithmetic n.算术
+- [ ] parameter n.形参
+- [ ] argument n.实参
+- [ ] inherent adj.天生的，固有的
+- [ ] compact adj.紧凑的 n.契约
+- [ ] enumerate v.枚举，列举
+- [ ] rigorous adj.严谨的，严格的，细致的
+- [ ] resume n.简历 v.继续
+- [ ] vanilla adj.普通的，寻常的
+- [ ] asynchronously adv.异步
+- [ ] mitigate v.缓解
+- [ ] accordingly adv.相应地，因此
+- [ ] emulator n.仿真器，模拟器
+- [ ] aptly adv.适当地
+- [ ] arguably adv.可以认为，有争议地，可论证地
+- [ ] pedantic adj.学究的，迂腐的
+- [ ] aggregate v.&n.聚集，总计
+- [ ] allot v.分配
+- [ ] prone adj.易于遭受…的
+- [ ] enroll v.登记，入学，招收
+- [ ] uniqueness n.唯一性
+- [ ] convoluted adj.复杂的
+- [ ] wizard adj.出色的 n.向导，奇才
+- [ ] arguably adv.可论证地；可以认为
+- [ ] tome n.巨著
+- [ ] tradeoff n.交易，权衡，取舍
+- [ ] rudimentary adj.基本的
+- [ ] snapshot n.简介，快照
+- [ ] codebase n.代码库
+- [ ] deviation n.偏差，偏离，违背
+- [ ] tweak v.调整，微调
+- [x] inventory n.库存，财产清单
+- [ ] equivalently adv.等价地，相当于
+- [ ] intuitively adv.直观
+- [ ] quadratic adj.平方的
+- [ ] logarithmic adj.对数的
+- [ ] proportionally adv.按比例
+- [ ] deque n.双向队列
+- [ ] underlying adj.根本的，潜在的，隐含的
+- [ ] analogous adj.类似的，模拟的
+- [ ] arbitrary adj.任意的，武断的
+- [ ] amortize v.分期偿还
+- [ ] encapsulation n.封装
+- [ ] polymorphism n.多态
+- [ ] bundle n.群，一大堆 v.扎，捆绑销售
+- [ ] deposit v.&n.存款
+- [ ] withdraw v.取款
+- [ ] defy v.违抗，蔑视，使不能
+- [ ] tamper v.&n.干扰，篡改
+- [ ] mangle v.破坏 n.识别编码
+- [ ] intricate adj.错综复杂的
+- [ ] vertex n.顶点
+- [ ] bidirectional adj.双向的
+- [ ] cyclic adj.环状的，循环的
+- [ ] acyclic adj.非周期的，非循环的
+- [ ] maze n.迷宫
+- [ ] recursion n.递归
+- [ ] matrix n.矩阵
+- [ ] consolidate v.合并，强化，加强
+- [ ] slime n.史莱姆，粘液
+- [ ] dagger n.匕首
+- [ ] fanged adj.有毒牙的，有尖牙的
+- [ ] dodge v.&n.躲避，逃避
+- [ ] shuffle v.&n.洗牌，随机播放，混合
+- [ ] sparse adj.稀少的，稀疏的
+- [ ] bidirectional n.双向的
+- [ ] overlap v.&n.交叠，重叠
+- [ ] underlying adj.根本的，潜在的，基本的
+- [ ] aggregate adj.&v.总计（的）
+- [ ] prevalence n.卓越，流行
+- [ ] proprietary n.所有权，所有物 adj.专利的，专卖的
+- [ ] hypervisor n.管理程序，虚拟层。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://d111kc.github.io/post/10.html">
+<meta property="og:image" content="https://d111kc.github.io/assets/avatar.png">
+<title>fcc</title>
+  
+<style>
+  <style>
+    .in-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 2px;
+      background: var(--in-color-accent);
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      pointer-events: none;
+    }
+  </style>
+</style></head>
+<body>
+  <header class="in-site-header" id="header">  <h1 class="in-page-title">fcc</h1>
+<nav class="in-site-nav" aria-label="Post navigation">    <a class="in-nav-btn" href="https://d111kc.github.io" title="首页" aria-label="首页"><svg class="octicon " width="16" height="16" aria-hidden="true"><path d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z" fill-rule="evenodd"></path></svg></a>
+
+  <button class="in-nav-btn" id="in-theme-toggle" type="button" title="切换主题" aria-label="切换主题">
+  <svg class="octicon" width="16" height="16"><path id="themeSwitch" d="M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z" fill-rule="evenodd"></path></svg>
+</button>
+</nav></header>
+  <main class="in-site-main" id="content">  <article>
+    <div class="in-post-meta-box">
+      <div class="in-post-meta">
+        <span class="in-meta-date">
+          <svg class="octicon " width="16" height="16" aria-hidden="true"><path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z" fill-rule="evenodd"></path></svg>
+          <span style="color:#0969da">2025-10-09</span>
+          <span class="in-meta-updated">(更新 2026-03-11)</span>
+        </span>
+        <span class="in-meta-labels">
+          <svg class="octicon " width="16" height="16" aria-hidden="true"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" fill-rule="evenodd"></path></svg>
+          <a href="https://d111kc.github.io/tag.html#cet6">
+            <span class="in-meta-dot" style="background-color:#98f5c1"></span>cet6
+          </a>
+        </span>
+        <a class="in-post-edit" href="https://github.com/d111kc/d111kc.github.io/issues/10" target="_blank" rel="noopener" title="在 GitHub 上编辑" aria-label="在 GitHub 上编辑"><svg class="octicon " width="16" height="16" aria-hidden="true"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354l-1.086-1.086Z" fill-rule="evenodd"></path></svg></a>
+      </div>
+    </div>
+    <nav class="in-toc" id="in-toc" data-toc-title="目录" data-toc-top="回到顶部" aria-label="目录"></nav>
+    <div class="in-progress" id="in-progress"></div>
+    <div class="in-post-body markdown-body"><ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> derive v衍生，派生</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> detach v.脱离，拆卸，派遣</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> dispatch n.&amp;v.派遣，调度</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> deamon n.守护进程，虚拟光驱</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> credential n.凭证 adj.信任的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> gradient</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> hibernation n.冬眠，休眠</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> compatibility n.兼容，并存</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> perception n.感知</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> primary colors 原色，黄蓝红</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> secondary colors 间色，两种原色等量混合得到</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> tertiary colors 复色，原色和间色混合得到</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> hue n.色调，颜色</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> derive v.由来</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> coziness n.舒适，安逸</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> evoke v.唤起</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> serenity n.宁静</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> palette n.调色板</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> scheme n.方案</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> analogous adj.类似的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> cohesive adj.有结合力的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> adjacent adj.邻近的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> magenta n.品红色</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> complementary adj.互补的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> triadic adj.三元，三色的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> vibrant adj.充满生机的，鲜艳的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> equidistant adj.等距离的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> monochromatic adj.单色的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> saturation n.饱和度</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> soothe v.安慰</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> prototype n.原型，样板</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> versatile adj.通用的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> spectrum n.光谱</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> transform v.转换，变换，几何变换</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> overflow v.溢出</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> filter</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> rotate v.旋转</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> scale v.缩放</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> skew v.扭曲</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> translate v.平移</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> clockwise adj.顺时针方向的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> seizure v.发作 n.癫痫</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> collapse v.坍塌，崩溃</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> flexbox n.弹性盒子</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> perpendicular adj.&amp;n.垂直</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> wrap v.包裹，换行</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> evenly adv.均匀地</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> envision v.想象，展望</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> justify v.两端对齐</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> typography n.印刷（术），排版</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> typeface n.字体</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> serif n.衬线字体，宋体等印刷体</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> sans serif 无衬线字体，黑体等电子设备常用字体</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> oblique n.&amp;v.倾斜</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> condense v.压缩</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> ascender n.上升笔画</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> descender n.下降物</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> kern n.字符间距</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> dense adj.密集的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> generic adj.通用的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> portfolio n.作品集，档案，文件夹</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> glyph n.字形</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> customize v.定制</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> simultaneous adj.同步的，同时的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> compatibility n.兼容性，和睦相处</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> render v.渲染，提供</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> sticky adj.粘性的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> symbiosis n.共生，合作关系</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> optimal adj.最好的，最适宜的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> granular adj.由颗粒构成的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> arbitrary adj.任意的，武断的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> traction n.牵引力，拉力</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> cornerstone n.基础</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> optimize v.充分利用，使最优化</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> outset n.开始</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> exemplify v.举例证明，示范</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> essence n.本质，精髓</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> predominantly adv.主要地</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> conceptualize v.构思，概念化</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> proportionally adv.按比例</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> employ v.使用，雇用</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> invisible adj.看不见的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> grid n.网格</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> fractional adj.分数的，小数的，很少的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> redundance n.冗余</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> implicit adj.含蓄的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> explicit adj.明确的，易于理解的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> rigid adj.死板的，严格的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> cybersecurity n.网络安全</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> malware n.恶意软件，电脑病毒</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> compatible adj.兼容的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> scrape v.刮，擦伤</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> abbreviation n.缩写，约分</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> duplicate v.复制</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> squash v.挤压</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> flush v.&amp;n.强制刷新，脸红</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> curly braces 花括号</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> immutable adj.不可变的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> primitive type 基本类型</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> reference type 引用类型</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> sock n.短袜，重击</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> excerpt n.摘录，节选，片段</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> sleeve n.袖子</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> arithmetic n.算术</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> parameter n.形参</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> argument n.实参</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> inherent adj.天生的，固有的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> compact adj.紧凑的 n.契约</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> enumerate v.枚举，列举</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> rigorous adj.严谨的，严格的，细致的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> resume n.简历 v.继续</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> vanilla adj.普通的，寻常的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> asynchronously adv.异步</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> mitigate v.缓解</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> accordingly adv.相应地，因此</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> emulator n.仿真器，模拟器</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> aptly adv.适当地</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> arguably adv.可以认为，有争议地，可论证地</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> pedantic adj.学究的，迂腐的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> aggregate v.&amp;n.聚集，总计</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> allot v.分配</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> prone adj.易于遭受…的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> enroll v.登记，入学，招收</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> uniqueness n.唯一性</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> convoluted adj.复杂的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> wizard adj.出色的 n.向导，奇才</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> arguably adv.可论证地；可以认为</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> tome n.巨著</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> tradeoff n.交易，权衡，取舍</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> rudimentary adj.基本的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> snapshot n.简介，快照</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> codebase n.代码库</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> deviation n.偏差，偏离，违背</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> tweak v.调整，微调</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> inventory n.库存，财产清单</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> equivalently adv.等价地，相当于</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> intuitively adv.直观</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> quadratic adj.平方的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> logarithmic adj.对数的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> proportionally adv.按比例</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> deque n.双向队列</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> underlying adj.根本的，潜在的，隐含的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> analogous adj.类似的，模拟的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> arbitrary adj.任意的，武断的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> amortize v.分期偿还</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> encapsulation n.封装</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> polymorphism n.多态</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> bundle n.群，一大堆 v.扎，捆绑销售</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> deposit v.&amp;n.存款</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> withdraw v.取款</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> defy v.违抗，蔑视，使不能</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> tamper v.&amp;n.干扰，篡改</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> mangle v.破坏 n.识别编码</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> intricate adj.错综复杂的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> vertex n.顶点</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> bidirectional adj.双向的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> cyclic adj.环状的，循环的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> acyclic adj.非周期的，非循环的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> maze n.迷宫</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> recursion n.递归</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> matrix n.矩阵</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> consolidate v.合并，强化，加强</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> slime n.史莱姆，粘液</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> dagger n.匕首</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> fanged adj.有毒牙的，有尖牙的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> dodge v.&amp;n.躲避，逃避</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> shuffle v.&amp;n.洗牌，随机播放，混合</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> sparse adj.稀少的，稀疏的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> bidirectional n.双向的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> overlap v.&amp;n.交叠，重叠</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> underlying adj.根本的，潜在的，基本的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> aggregate adj.&amp;v.总计（的）</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> prevalence n.卓越，流行</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> proprietary n.所有权，所有物 adj.专利的，专卖的</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> hypervisor n.管理程序，虚拟层</li>
+</ul></div>
+  </article>
+  <div id="in-fab" class="in-fab"
+       data-toc-title="目录"
+       data-top-title="回到顶部"
+       data-bottom-title="下一页"></div>
+</main>
+  <footer class="in-site-footer" id="footer"><div class="in-footer-icons" id="footer-icons" data-copied="已复制">
+  <a class="in-nav-btn in-social" href="https://d111kc.github.io/rss.xml" target="_blank" rel="noopener" title="RSS" aria-label="RSS"><svg fill="#FFA500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RSS</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+  <a class="in-nav-btn in-social" href="https://github.com/d111kc/d111kc.github.io" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg fill="#181717" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+<div class="in-footer-line" id="footer-copyright">
+  Copyright &copy; <span id="copyright-year"></span>
+  <a href="https://d111kc.github.io">D111KC</a>
+</div>
+<div class="in-footer-powered" id="footer-powered">
+  <span id="run-days"></span>
+  <span>Powered by <a href="https://github.com/interset-wq/InterNote">InterNote</a></span>
+</div>
+<div class="in-footer-built">构建部署于 2026-10-15 22:05:35</div>
+<script>
+  (function () {
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+  })();
+</script></footer>
+  <script src="https://d111kc.github.io/plugins/theme.js"></script>
+  <script id="internote-search" src="https://d111kc.github.io/plugins/search.js"
+    data-index-url="https://d111kc.github.io/search-index.json"
+    data-placeholder="搜索"
+    data-no-results="未找到结果"></script>
+  <script src="https://d111kc.github.io/plugins/toc.js"></script>
+  <script src="https://d111kc.github.io/plugins/fab.js"></script>
+  <script src="https://d111kc.github.io/plugins/lightbox.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var bar = document.getElementById('in-progress');
+      var body = document.querySelector('.in-post-body');
+      function update() {
+        var start = body.offsetTop - 80;
+        var end = body.offsetTop + body.offsetHeight - window.innerHeight + 40;
+        var t = (window.scrollY - start) / Math.max(end - start, 1);
+        bar.style.transform = 'scaleX(' + Math.min(Math.max(t, 0), 1) + ')';
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,8 @@
+- [ ] empress n.皇后，女皇
+- [ ] ape n.类人猿 v.模仿
+- [ ] trolley n.&v.（乘）电车
+- [ ] puppy n.小狗
+- [ ] referee n.&v.裁判，仲裁
+- [ ] puppet n.木偶，傀儡
+- [ ] graze v.放牧，吃草 n.擦伤
+- [ ] fabulous adj.极好的，绝妙的
